@@ -1,0 +1,187 @@
+.campaign-list
+	width: 100%
+	float: left
+
+	section
+		border: 1px solid $grey
+		background: $white
+		+border-radius-bottom-left(5px)
+		+border-radius-bottom-right(5px)
+		position: relative
+		margin-top: $base-margin*.75
+		margin-bottom: $base-margin*.75
+		width: 100%
+		float: left
+		padding-bottom: 3em
+		&:hover
+			background: $grey-light
+		@media #{$mobile}
+			padding-bottom: 0
+			width: 48%
+			margin-right: 4%
+			min-height: 35em
+			&:nth-child(2n)
+				margin-right: 0
+
+		span
+			&.code
+				position: absolute
+				background: rgba(38,38,38,.8)
+				color: $white
+				top: $base-margin
+				right: $base-margin
+				padding: $base-margin*.25 $base-margin*.5
+				+border-radius(5px)
+
+		img
+			width: 100%
+			height: auto
+			float: left
+			&.funded, &.event
+				width: 25%
+				height: auto
+				position: absolute
+				top: 0
+				left: 0
+
+		.copy
+			width: 90%
+			padding: 5%
+			float: left
+
+			h2
+				font-size: $base-fs*1.25
+				margin-bottom: $base-margin*.75
+
+				a
+					color: $black
+					text-decoration: none
+					&:hover, &:focus
+						color: $red-dark
+
+			h3
+				font-size: $base-fs*.85
+				margin-bottom: $base-margin*1
+				color: $text-light
+				float: left
+				width: 100%
+
+				a
+					color: $text
+					text-decoration: none
+					display: block
+					&:hover, &:focus
+						color: $red-dark
+
+				span
+					width: 39%
+					float: left
+					font-size: $base-fs*.9
+					&:last-child
+						width: 59%
+						text-align: right
+						float: right
+
+				strong
+					color: $black
+					font-size: $base-fs*1.3
+					font-weight: 400
+					padding-bottom: $base-margin*.25
+					display: block
+					&.orange, &.green
+						font-weight: 600
+
+			p
+				font-size: $base-fs*.85
+
+			a
+				color: $red-dark
+				&:hover, &:focus
+					color: $red
+
+		a
+			&.button
+				padding-left: 0
+				padding-right: 0
+				width: 90%
+				font-weight: 700
+				position: absolute
+				left: 5%
+				bottom: 2.5%
+
+		&.event
+
+			h2, h3
+				a
+					&:hover, &:focus
+						color: $yellow-dark
+
+			p
+				a
+					color: $yellow-dark
+					&:hover, &:focus
+						color: $yellow
+
+		&.funded
+
+			h2, h3
+				a
+					&:hover, &:focus
+						color: $turq-dark
+
+			p
+				a
+					color: $turq-dark
+					&:hover, &:focus
+						color: $turq
+
+	&.three
+
+		section
+			@media #{$mobile}
+				min-height: 33em
+			@media #{$tablet}
+				width: 32%
+				margin-right: 2%
+				&:nth-child(2n)
+					margin-right: 2%
+				&:nth-child(3n)
+					margin-right: 0
+			@media #{$desktop}
+				min-height: 35em
+
+	&.four
+
+		section
+			@media #{$mobile}
+				width: 47.5%
+				min-height: 32em
+			@media #{$small-tablet}
+				min-height: 33em
+			@media #{$tablet}
+				width: 23.5%
+				margin-left: -2px
+				margin-right: 2%
+				min-height: 32em
+				&:nth-child(2n)
+					margin-right: 2%
+				&:nth-child(4n)
+					margin-right: 0
+
+.highlight-bar
+	
+	.campaign-list
+		&.three
+
+			section
+				border: 0
+				&:hover
+					background: $white
+				&:last-child
+					@media #{$mobile}
+						display: none
+					@media #{$tablet}
+						width: 32%
+						display: inline-block
+
+

@@ -1,0 +1,83 @@
+.case-studies-container
+
+	h1
+		padding-bottom: $base-margin
+		font-weight: 700
+
+	.case-studies
+		width: 90%
+		float: left
+		padding: 0 % $base-margin*2 5%
+		@media #{$mobile}
+			width: 80%
+			padding: 0 10% $base-margin*2 10%
+		@media #{$small-tablet}
+			width: 60%
+			padding: 0 20% $base-margin*2 20%
+		@media #{$tablet}
+			width: 100%
+			padding: 0 0 $base-margin*.75 0
+
+		section
+			width: 100%
+			float: left
+			text-align: center
+			position: relative
+			color: $white
+			margin-bottom: $base-margin*1.5
+			@media #{$tablet}
+				width: 32%
+				margin-right: 2%
+				&:nth-child(3n)
+					margin-right: 0
+
+			img
+				width: 100%
+				height: auto
+				float: left
+
+			p 
+				background: $grey-light
+				position: relative
+				z-index: 100
+				float: left
+				margin: 0
+				color: $text
+				padding: $base-margin 5%
+				width: 90%
+				border-bottom: 1px solid $grey-mid
+				@media #{$tablet}
+					padding: $base-margin 5% 0
+					border-bottom: 0
+
+			a
+				display: block
+				background: rgba(38,38,38,.3)
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				color: $white
+				text-decoration: none
+				z-index: 10
+
+				h2
+					font-family: $hw-font
+					color: $white
+					font-size: $base-fs*2.25
+					line-height: 1
+					width: 95%
+					padding: 0 2.5%
+					@media #{$tablet}
+						font-size: $base-fs*2.25
+					@media #{$desktop}
+						font-size: $base-fs*3.25
+
+				p
+					padding: $base-margin 2.5%
+					width: 95%
+					background: none
+					color: $white
+					border-bottom: 0
+					

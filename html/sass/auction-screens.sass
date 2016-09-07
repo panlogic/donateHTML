@@ -1,0 +1,218 @@
+.screen
+
+	h1
+		float: left
+		font-size: $base-fs*3
+		font-weight: 600
+		text-align: center
+		width: 100%
+		padding-bottom: $base-margin*.5
+		color: $black
+
+		span
+			display: inline-block
+
+		em
+			display: inline-block
+			font-style: normal
+			font-weight: 300
+			color: $text
+
+	h2
+		float: left
+		width: 100%
+		padding-bottom: $base-margin*.35
+
+		span
+			width: 100%
+			float: left
+			text-align: center
+			font-size: $base-fs*2.8
+			font-weight: 300
+			color: $text
+
+		strong
+			color: $black
+			font-weight: 600
+			&:first-child
+				padding-left: 0
+			&.orange
+				color: $orange-dark
+			&.green
+				color: $green
+
+
+	&.single
+		position: relative
+		height: 100vh
+		width: 100vw
+
+		a
+			display: block
+			position: relative
+			height: 100vh
+			width: 100vw
+			+background-size-sv(cover)
+
+			section
+				background: rgba(255,255,255,0.9)
+				+border-radius(3px)
+				width: 92vw
+				padding: 1.5vw
+				position: absolute 
+				bottom: 2.5vh
+				right: 2.5vw
+
+				h1
+					font-size: 3vw
+
+				h2
+
+					span
+						font-size: 2.5vw
+
+	&.multi
+		width: 100vw
+		height: 100vh
+		overflow: hidden !important
+
+		.mask
+			width: 25vw
+			height: 100vh
+			position: absolute
+			top: 0
+			left: 0
+			background: rgba(0,0,0,0.5)
+			z-index: 1000000
+			&:last-child
+				left: auto
+				right: 0
+
+		.cycle-slideshow
+			height: 100vh
+			overflow: visible !important
+			width: 50vw
+			margin-left: 25vw
+
+			a
+				&.lot
+					position: relative
+					height: 100vh
+					width: 100vw
+					background: $white
+					white-space: normal
+
+					img
+						width: 100%
+						height: auto
+						margin-bottom: $base-margin
+
+					h1
+						font-size: 2.5vw
+
+						span
+							width: 100% 
+
+						em
+							font-size: $base-fs*.6
+							width: 100% 
+
+					h2
+						width: 90% 
+						margin-left: 5%
+						margin-right: 5%
+
+						span
+							font-size: 1.8vw
+
+						strong
+							display: inline-block
+							padding-left: 0
+							padding-top: $base-margin*.35
+							&:first-child 
+								padding-top: 0
+
+	&.table
+		width: 100vw
+		height: 100vh
+		overflow: hidden !important
+
+		.mask
+			width: 100vw
+			height: 40vh
+			position: absolute
+			top: 0
+			left: 0
+			background: rgba(0,0,0,0.5)
+			z-index: 1000000
+			&:last-child
+				top: auto
+				bottom: 0
+
+		.cycle-slideshow
+			overflow: visible !important
+			z-index: 10
+			height: 20vh
+			width: 100vw
+			margin-top: 40vh
+
+			a
+				&.lot
+					position: relative
+					height: 20vh
+					width: 100vw
+					background: $white
+
+					img
+						width: auto
+						height: 10vh
+						float: right
+						@media #{$mobile}
+							height: 20vh
+
+					section
+						width: 60vw
+						height: 20vh
+						position: relative
+						@media #{$tablet}
+							width: 73vw
+						@media #{$desktop}
+							width: 76vw
+						@media #{$widescreen}
+							width: 79vw
+
+
+						h1
+							float: left
+							text-align: left
+							font-size: $base-fs*1.25
+							width: 100%
+							padding-left: 2.5%
+							padding-top: $base-margin*.5
+							font-size: 3vw
+							@media #{$tablet}
+								font-size: 2.5vw
+
+							em
+								font-size: $base-fs*.9
+								display: inline-block
+
+						h2
+							float: left
+							width: 100%
+							padding-left: 2.5%
+							font-size: 2vw
+							font-weight: 300
+							text-align: left
+							@media #{$tablet}
+								position: absolute
+								bottom: 0.5em
+								right: 0
+								text-align: right
+								font-size: 1.5vw
+
+							span
+								width: 100%
+								text-align: left
+
+

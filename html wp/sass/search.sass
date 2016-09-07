@@ -1,0 +1,38 @@
+.search
+
+	form
+		float: left
+		width: 100%
+		padding: 0 0
+		border: 0
+		@media #{$small-tablet}
+			width: 80%
+			padding: 0 10%
+		@media #{$desktop}
+			width: 60%
+			padding: 0 20%
+
+		label
+			font-size: $base-fs*1.5
+			font-weight: 700
+			color: $black
+			width: 100%
+			text-align: center
+			padding-bottom: $base-margin
+			@media #{$tablet}
+				font-size: $base-fs*1.75
+
+		input
+			width: 100%
+			@media #{$mobile}
+				width: 77.5%
+			&[type=submit]
+				width: auto
+				float: none
+				@media #{$mobile}
+					width: 20%
+					padding: 0.95em 0
+					float: right
+
+
+

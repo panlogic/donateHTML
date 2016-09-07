@@ -1,0 +1,140 @@
+.stats
+	width: 100%
+	float: left
+	text-align: center
+	padding: $base-margin 0 0 0
+	border-box: box-sizing
+	@media #{$mobile}
+		width: 90%
+		margin: 0 5%
+	@media #{$small-tablet}
+		width: 80%
+		margin: 0 10%
+	@media #{$tablet}
+		width: 100%
+		margin: 0 0
+
+	blockquote
+		font-size: $base-fs*1.75
+		float: none
+		text-align: center
+		display: inline-block
+		color: $turq-dark
+		@media #{$small-tablet}
+			width: 70%
+		@media #{$tablet}
+			width: 60%
+		@media #{$desktop}
+			width: 45%
+
+		&.icon
+			padding-left: $base-margin*4
+			text-align: left
+
+			&.coins
+				background: url(../images/sketches/sm-coins.svg) no-repeat 0 0
+				+background-size(auto,80px)
+				min-height: 80px
+
+			&.graph
+				background: url(../images/sketches/sm-graph.svg) no-repeat $base-margin*.5 0
+				+background-size(auto,60px)
+				min-height: 60px
+
+			&.heart
+				background: url(../images/sketches/sm-heart.svg) no-repeat $base-margin 0
+				+background-size(auto,60px)
+				min-height: 60px
+
+			&.person
+				background: url(../images/sketches/sm-person.svg) no-repeat $base-margin*.5 0
+				+background-size(auto,80px)
+				min-height: 80px
+
+		&.border-top
+			border-top: 1px solid $grey
+			padding-top: $base-margin
+
+			&.icon
+
+				&.coins
+					background-position: 0 $base-margin
+
+				&.graph
+					background-position: $base-margin*.5 $base-margin*1.25
+
+				&.heart
+					background-position: $base-margin $base-margin*1.1
+
+				&.person
+					background-position: $base-margin*.5 $base-margin
+
+		&.border-bottom
+			border-bottom: 1px solid $grey
+			padding-bottom: $base-margin
+			margin-bottom: $base-margin
+
+	&.no-padding
+		padding-top: 0
+
+		blockquote 
+			border-top: 0 !important
+			padding-top: 0
+
+.copy, aside 
+
+	.stats
+		width: 100%
+		float: left
+		margin: 0 0
+		text-align: left
+
+		blockquote
+			font-size: $base-fs*1.5 !important
+			width: auto
+			text-align: left
+
+			&.icon
+				color: $turq-dark !important
+
+				&.coins
+					+background-size(auto,60px)
+					min-height: 60px
+
+				&.graph
+					background: url(../images/sketches/sm-graph.svg) no-repeat $base-margin*.5 $base-margin*.5
+					+background-size(auto,40px)
+					min-height: 40px
+
+				&.heart
+					background: url(../images/sketches/sm-heart.svg) no-repeat $base-margin 0
+					+background-size(auto,40px)
+					min-height: 40px
+
+				&.person
+					background: url(../images/sketches/sm-person.svg) no-repeat $base-margin*.5 0
+					+background-size(auto,60px)
+					min-height: 60px
+
+aside 
+
+	.stats
+
+		blockquote
+			margin-bottom: 0 !important
+			border-bottom: 0 !important
+			padding-bottom: $base-margin !important
+
+			&.border-bottom
+				border-bottom: 1px solid $grey !important
+				margin-bottom: $base-margin !important
+
+.grey-dk
+
+	.stats
+	
+		blockquote
+			border-top: 1px solid $grey-mid
+
+
+

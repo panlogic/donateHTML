@@ -1,0 +1,484 @@
+form
+	width: 100%
+	float: left
+	border-top: 1px solid $grey-mid
+	padding: $base-margin*2 0
+	&.no-border
+		border-top: 0
+
+	.message
+		padding: $base-margin 0
+
+	fieldset
+		width: 100%
+		float: left
+		border-top: 1px solid $grey-mid
+		padding: $base-margin*2 0
+		&:first-child, &.no-border
+			border-top: 0
+			padding: 0 0 $base-margin*2 0
+		&.center
+			text-align: center
+
+			input
+				float: none
+
+			label
+				float: none
+				width: auto
+
+	legend, h2
+		font-size: $base-fs*1.5
+		color: $black
+		font-weight: 700
+		width: 100%
+		padding-bottom: $base-margin
+		@media #{$small-tablet}
+			font-size: $base-fs*1.75
+			padding-bottom: $base-margin*.5
+
+	.checkbox
+		width: 100%
+		float: left
+
+		label
+			width: 90%
+
+		&.multi
+
+			span
+				display: block
+				width: 100%
+				float: left
+
+		&.indent
+			width: 95%
+			margin-left: 5%
+
+		&.inline
+
+			span
+				width: auto
+				margin: 0 $base-margin*1.5 0 0 
+
+				label
+					width: auto
+					padding-bottom: 0
+
+			a
+				&.show-info
+					clear: both
+					margin-top: $base-margin
+
+	.manual-address
+		width: 100%
+		float: left
+		display: none
+
+	p
+		width: 100%
+		float: left
+
+	.error
+		color: $orange !important
+
+		*
+			color: $orange !important
+
+	&.donate
+		text-align: center
+		&.center
+			@media #{$tablet}
+				width: 80%
+				padding-left: 10%
+				padding-right: 10%
+			@media #{$widescreen}
+				width: 60%
+				padding-left: 20%
+				padding-right: 20%
+
+		input
+			float: none
+			&[type=submit]
+				margin: 0
+
+		.fancyform
+
+			legend
+				padding-bottom: $base-margin
+
+			div
+				width: auto
+				margin: 0 $base-margin
+
+				&.checkbox
+					width: 100%
+					float: left
+					&:first-child
+						margin: 0 0 $base-margin*1.5 0
+					&:last-child
+						margin: 0 0 $base-margin*.5 0
+
+					label
+						width: 100%
+
+					em
+						float: left
+						font-size: $base-fs*1.25
+						line-height: 1.2
+						@media #{$mobile}
+							padding-top: 12px
+
+				&.amount-container
+					width: 100%
+					float: left
+					margin: 0 0
+					text-align: center
+
+					div
+						margin-bottom: $base-margin
+						@media #{$desktop}
+							margin-bottom: 0
+		
+					input[type=radio   ]:not(old) + label > span
+						+border-radius(50%)
+						width: 40px
+						height: 40px
+						
+					input[type=radio]:not(old):checked + label > span > span
+						width: 37px
+						height: 35px
+						background: url(../images/tick.svg) no-repeat center center
+						+background-size(37px,35px)
+						margin: -3px 0 0 6px
+
+					em
+						width: 1.75em
+						text-align: left
+						font-size: 1.5em
+
+				&.other
+					width: 100%
+					margin: $base-margin*1.5 0 $base-margin 0 !important
+
+					input
+						&[type=text]
+							width: 100%
+							margin-bottom: 0
+							font-size: $base-fs*1.25
+							padding: 0.55em 1.25%
+
+		a
+			float: none
+
+	&.login
+		width: 100%
+		@media #{$desktop}
+			width: 80%
+			padding-left: 10%
+			padding-right: 10%
+
+		fieldset
+			float: left
+			width: 100%
+			padding: 0 0 $base-margin 0
+			margin: 0 0 $base-margin*2 0
+			border-bottom: 1px solid $grey-mid
+			@media #{$small-tablet}
+				width: 50%
+				padding: 0 0 $base-margin*2 0
+				margin: 0
+				border-bottom: 0
+			@media #{$tablet}
+				width: 60%
+
+			.checkbox
+				width: 100%
+				padding: $base-margin*.5 0 $base-margin 0
+
+				input
+					width: auto
+
+		.account
+			float: right
+			width: 100%
+			margin: 0 0 $base-margin*2 0
+			@media #{$small-tablet}
+				width: 40%
+			@media #{$tablet}
+				width: 30%
+
+			h2
+				padding-bottom: $base-margin*.65
+
+		a
+			&.small
+				display: block
+				clear: both
+				margin: $base-margin*1.5 0
+				@media #{$tablet}
+					float: right
+					display: inline
+					margin: 0
+					clear: none
+			&.button
+				padding-left: $base-margin
+				padding-right: $base-margin
+			&.secondary
+				margin-left: $base-margin
+
+		input
+			&[type=submit]
+				margin-bottom: 0
+
+	&.center
+		text-align: left
+		width: 100%
+		@media #{$tablet}
+			width: 60%
+			padding-left: 20%
+			padding-right: 20%
+
+		fieldset
+			padding-bottom: $base-margin*1.25
+			&.border
+				border-top: 1px solid $grey-mid
+				padding: $base-margin*2 0	
+			&.center
+				a
+					&.skip
+						display: block
+						margin: $base-margin 0
+					&.button
+						&.secondary
+							margin-top: $base-margin*.4
+							margin-left: $base-margin
+
+		legend, h2
+			text-align: center
+
+			img
+				width: 50%
+				margin: 0 25%
+				@media #{$small-tablet}
+					width: 30%
+					margin: 0 35% $base-margin
+
+		h2
+			text-transform: uppercase
+			font-size: $base-fs
+			text-align: center
+			&.margin-bottom
+				margin-bottom: $base-margin
+
+		a
+			&.show-info
+				margin: -$base-margin*.25 0 $base-margin*1.5 0
+				float: left
+				clear: both
+				display: inline-block
+			&.show-password
+				margin: -$base-margin*.25 0 $base-margin*1 0
+				@media #{$small-tablet}
+					position: absolute
+					top: 21px
+					right: 11px
+			&.secondary
+				margin-left: $base-margin
+				margin-top: 0
+
+		div
+			margin: 0
+			width: 100%
+			position: relative
+			&.checkbox
+				margin-bottom: $base-margin
+			&.space 
+				margin-bottom: $base-margin
+			&.space-above 
+				margin-top: $base-margin
+			&.postcode
+				float: left
+
+				input
+					width: 53%
+					@media #{$small-tablet}
+						width: 60%
+					@media #{$tablet}
+						width: 70%
+
+				a
+					&.button
+						padding-left: 0
+						padding-right: 0
+						width: 40%
+						float: right
+						font-size: $base-fs*.85
+						font-weight: 600
+						margin: $base-margin*.4 0
+						@media #{$small-tablet}
+							width: 35%
+						@media #{$tablet}
+							width: 25%
+
+		input[type=checkbox]:not(old) + label > span
+			float: left
+			margin-right: $base-margin*.5
+
+		input[type=checkbox]:not(old) + label em
+			width: 76%
+			float: left
+			margin-top: -$base-margin*.25
+			font-size: $base-fs
+			@media #{$small-tablet}
+				width: 86%
+				font-size: $base-fs*1.25
+				
+.help-container
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	background: rgba(255,255,255,0.1)
+	display: none
+	text-align: center
+
+	.help
+		background: $white
+		position: fixed
+		height: 70vh
+		margin-top: 10vh
+		margin-left: 5vw
+		width: 80%
+		padding: 5%
+		+border-radius(5px)
+		+box-shadow(10px, 10px, 0, 0, rgba(0,0,0,0.2))
+		@media #{$small-tablet}
+			background: $white
+			position: fixed
+			height: 80vh
+			margin-top: 10vh
+			margin-left: 25vw
+			width: 40%
+			padding: 2.5% 5% 0 5%
+			+border-radius(5px)
+			+box-shadow(10px, 10px, 0, 0, rgba(0,0,0,0.2))
+		@media #{$tablet}
+			height: 50vh
+			margin-top: 25vh
+
+		h2
+			padding-bottom: $base-margin*.5
+			font-weight: 600
+			font-size: $base-fs*1.25
+
+		p
+			&.large
+				font-size: $base-fs*1.75
+				color: $black
+				font-weight: 700
+				margin: 0
+				padding: 0 0 $base-margin 0
+
+		a
+			&.button
+				font-weight: 700
+			&.small
+				display: block
+				margin: $base-margin*2 0
+
+.event-tablet
+
+	h1
+		font-family: $hw-font
+		text-align: center
+		font-size: $base-fs*3
+		margin: 0
+		padding-bottom: $base-margin*.25 !important
+
+	form
+		border-top: 0
+		padding-top: 0
+		&.donate
+			width: 85%
+			margin: 0 7.5%
+
+	ul
+		&.amounts
+			width: 100%
+			float: left
+			text-align: center
+			list-style: none
+			margin: 0
+			padding: 0
+
+			li
+				display: inline-block
+				margin: $base-margin
+
+				a
+					display: inline-block
+					padding: $base-margin*.75 0
+					width: 3em
+					height: 1.5em
+					font-weight: 700
+					font-size: $base-fs*3
+					text-decoration: none
+					border: 10px solid $turq
+					+border-radius(50%)
+					background: $black
+					color: $white
+					+transition(background,.3s)
+					&:hover, &:focus
+						background: $turq
+
+	.other-amount
+		width: 100%
+		float: left
+		background: $grey-light
+		text-align: center
+
+		form
+			float: left
+			width: 100%
+			padding: $base-margin*2 0
+			border: 0
+			@media #{$small-tablet}
+				width: 60%
+				padding: $base-margin*2 20%
+
+			label
+				font-size: $base-fs*1.75
+				font-weight: 600
+				color: $black
+				width: 100%
+				text-align: center
+				padding-bottom: $base-margin
+
+			input
+				width: 97%
+				font-weight: 700
+				@media #{$mobile}
+					width: 55%
+				&[type=submit]
+					width: 100%
+					padding: 0.95em 0
+					float: right
+					@media #{$mobile}
+						width: 35%
+						padding: 0.95em 0
+
+			p
+				width: 100%
+				font-weight: 700
+				margin: $base-margin*3 0 0 0
+				float: left
+				clear: both
+
+
+
+
+
+
+

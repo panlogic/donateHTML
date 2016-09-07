@@ -1,0 +1,158 @@
+header
+	background: $white
+	width: 100%
+	float: left
+
+	a
+
+		&.button
+			padding: $base-margin*.25 $base-margin*.75
+			font-weight: 600
+			text-transform: none
+			font-size: $base-fs*.85
+			float: right
+			text-transform: uppercase
+			@media #{$tablet}
+				display: none
+
+			&.donate
+				text-transform: uppercase
+				background: $red
+				&:hover, &:focus
+					background: $red-dark
+				@media #{$mobile}
+					float: right
+
+			&.join
+				background: $yellow
+				&:hover, &:focus
+					background: $yellow-dark
+				@media #{$mobile}
+					float: right
+
+			em
+				color: $turq
+				font-style: normal
+
+	nav
+		width: 100%
+		float: left
+
+		a
+			&.logo
+				display: inline-block
+				float: left
+				margin: $base-margin 0
+
+				img
+					width: auto
+					height: 20px
+					float: left
+					@media #{$tablet}
+						height: 26px
+
+			&.show-menu
+				float: right
+				margin-top: $base-margin*1.1
+				@media #{$tablet}
+					margin-top: $base-margin*1.25
+				@media #{$desktop}
+					display: none
+
+				em
+					display: block
+					float: left
+					font-style: normal
+					color: $black
+					text-transform: uppercase
+					font-size: $base-fs*.95
+					margin-right: $base-margin*.5
+
+				> span
+					display: block
+					float: right
+					width: 1.5em
+
+					span
+						display: block
+						width: 1.5em
+						height: 3px
+						margin: 5px 0
+						background: $black
+						+border-radius(1.5px)
+						&:first-child
+							margin-top: 0
+						&:last-child
+							margin-bottom: 0
+
+				&.open
+
+					em
+						color: $turq
+
+					> span
+
+						span
+							background: $turq
+
+		ul
+			display: none
+			width: 100%
+			float: left
+			margin-bottom: $base-margin*.8
+			@media #{$desktop}
+				width: 85%
+				display: inline-block
+				float: right
+				margin-top: $base-margin*.8
+				margin-bottom: 0
+
+			li
+				padding: $base-margin*.5 0
+				line-height: 1
+				@media #{$tablet}
+					display: inline-block
+					padding: $base-margin*.6 $base-margin*1 0 0
+					&:last-child
+						padding-right: 0
+					&.mobile 
+						display: none
+				@media #{$desktop}
+					padding: $base-margin*.5 0 0 $base-margin*1.25
+					&:last-child
+						padding-left: 0
+
+				a
+					&:link, &:visited, &:active
+						color: $black
+						font-weight: 600
+						text-decoration: none
+						line-height: 1
+
+					em
+						font-style: normal
+						color: $turq
+
+					&.button
+						display: inline-block
+						font-size: $base-fs*.95
+						padding: $base-margin*.6 $base-margin
+						margin-right: $base-margin
+						margin-top: $base-margin*.5
+						@media #{$tablet}
+							padding: $base-margin*.6 $base-margin*.6
+							margin-right: 0
+							margin-top: 0
+							&:first-child
+								margin-left: $base-margin*.5
+						@media #{$desktop}
+							&:first-child
+								margin-left: $base-margin
+
+				&:last-child
+					float: left
+					@media #{$tablet}
+						float: right
+						padding-top: 0
+
+

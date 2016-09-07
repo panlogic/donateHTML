@@ -1,0 +1,84 @@
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	z-index: 10000
+	background: rgba(0,0,0,.5)
+
+	.info-box
+		position: fixed
+		top: 50%
+		left: 0
+		box-sizing: border-box
+		width: 90vw
+		height: 16em
+		margin: -8em 0 0 5vw
+		background: $white
+		text-align: center
+		padding: $base-margin 2vw
+		@media #{$small-tablet}
+			width: 70vw
+			height: 12em
+			margin: -6em 0 0 15vw
+		@media #{$tablet}
+			width: 50vw
+			margin: -5em 0 0 25vw
+		@media #{$desktop}
+			width: 40vw
+			margin: -5em 0 0 30vw
+
+		h1
+			font-size: $base-fs*1.5
+			margin: $base-margin*.5 0 $base-margin 0
+
+		.button
+			font-size: $base-fs*.9
+			margin-bottom: $base-margin
+
+		&.full-page
+			width: 90vw
+			height: 90vh
+			margin: 5vh 0 0 5vw
+			padding: $base-margin
+			top: 0
+			overflow: hidden
+			overflow-y: scroll
+			text-align: left
+			@media #{$small-tablet}
+				width: 70vw
+				height: 70vh
+				margin: 15vh 0 0 15vw
+
+			p
+				font-size: $base-fs*.9
+
+			ul, ol
+				margin-left: $base-margin*1.5
+				font-size: $base-fs*.9
+
+				li
+					padding-left: $base-margin*.5
+					padding-bottom: $base-margin*.5
+
+			h1
+				margin: $base-margin*1.5 0 $base-margin 0
+				@media #{$small-tablet}
+					margin: $base-margin*.5 0 $base-margin 0
+
+			a
+				&.close-overlay
+					position: fixed
+					top: 6vh
+					right: 7vw
+					padding: $base-margin*.5 $base-margin
+					@media #{$small-tablet}
+						top: 17vh
+						right: 16vw
+
+
+
+
+

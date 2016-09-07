@@ -1,0 +1,480 @@
+/**
+ * Barclays Smartpay styles
+ */
+footer ul, footer ul li {
+	text-align: left !important;
+}
+
+footer ul li {
+	width: auto !important;
+}
+
+form#pageform {
+    text-align: left;
+    width: 100%;
+    border: 0; }
+    @media all and (min-width: 52em) {
+      form#pageform {
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%; } }
+    form#pageform fieldset {
+      padding-bottom: 1.25em; }
+      form#pageform fieldset.center a.skip {
+        display: block;
+        margin: 1em 0; }
+      form#pageform fieldset.center a.button.secondary {
+        margin-top: 0.4em;
+        margin-left: 1em; }
+    form#pageform legend {
+      text-align: center; }
+      form#pageform legend svg {
+        fill: #262626;
+        width: 50%;
+        padding-bottom: 20%; }
+        @media all and (min-width: 40em) {
+          form#pageform legend svg {
+            width: 30%;
+            padding-bottom: 10%; } }
+    form#pageform h2 {
+      text-transform: uppercase;
+      font-size: 1em;
+      text-align: center; }
+      form#pageform h2.margin-bottom {
+        margin-bottom: 1em; }
+    form#pageform a[class^="show"] {
+      margin: -0.25em 0 1.5em 0;
+      float: left;
+      display: inline-block; }
+    form#pageform div {
+      margin: 0;
+      width: 100%; }
+      form#pageform div.checkbox {
+        margin-bottom: 1em; }
+      form#pageform div.postcode {
+        float: left; }
+        form#pageform div.postcode input {
+          width: 53%; }
+          @media all and (min-width: 40em) {
+            form#pageform div.postcode input {
+              width: 60%; } }
+          @media all and (min-width: 52em) {
+            form#pageform div.postcode input {
+              width: 70%; } }
+        form#pageform div.postcode a.button {
+          padding-left: 0;
+          padding-right: 0;
+          width: 40%;
+          float: right;
+          font-size: 0.85em;
+          font-weight: 600;
+          margin: 0.4em 0; }
+          @media all and (min-width: 40em) {
+            form#pageform div.postcode a.button {
+              width: 35%; } }
+          @media all and (min-width: 52em) {
+            form#pageform div.postcode a.button {
+              width: 25%; } }
+    form#pageform input[type=checkbox]:not(old) + label > span {
+      float: left;
+      margin-right: 0.5em; }
+    form#pageform input[type=checkbox]:not(old) + label em {
+      width: 76%;
+      float: left;
+      margin-top: -0.25em;
+      font-size: 1em; }
+      @media all and (min-width: 40em) {
+        form#pageform input[type=checkbox]:not(old) + label em {
+          width: 86%;
+          font-size: 1.25em; } }
+
+
+.pmOcPayRegularMethods {
+	width: 100%;
+	float: left;
+	border-top: 1px solid #CCC;
+	padding-top: 2em;
+	text-align: center;
+	font-size: 1em !important;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.pmOcPayStoredDetails {
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 1em !important;
+	text-transform: uppercase;
+	font-weight: 700;
+
+}
+
+#pmcontent {
+	float:left;
+	width: 100%;
+}
+
+
+#foot {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+#footc {
+	width: 100%;
+	float: left;
+	text-align: center;
+	
+}
+
+.paddiv1, .paddiv2 {
+	text-align:center;
+	height: 0px;
+}
+
+#nextstep {	
+	padding:0 0 1em 0;
+	margin:0 0 1em 0;
+	float:left;
+	width:100%;
+}
+
+#nextstepc {
+	
+}
+
+.popupMsg {
+	display: none;
+	background-color: #FFF;
+	font-size:100%;
+	padding:2%;
+	width:96%;
+	float:left;
+}
+
+.popupMsgOPP {
+	font-size:100%;
+	position:absolute;
+	top:1em; /* Add to this the height of you merchant logo to keep the What is CV2 window inline */
+	left:50%;
+	width: 250px;
+	height: auto;
+	padding:10px;
+	margin: 0 0 0 -135px;
+	z-index: 10;
+	background: #FFF;
+  -moz-box-shadow: 0 0 10px #666;
+  -webkit-box-shadow: 0 0 10px #666;
+  box-shadow: 0 0 10px #666;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  font-size:100%;
+}
+.popupMsgOPP h3{
+	color:#666;
+	padding:0 !important;
+	margin-bottom:10px !important;
+}
+.popupMsgOPP p{
+	color:#666;
+	padding:0 !important;
+	margin-bottom:10px !important;
+}
+
+
+/* Common HTML Elements in #content */
+#content {
+	color:#666666;
+	line-height: 1.6 !important;
+}
+#content p,#content ul,#content pre {
+	0
+}
+
+#content h2 {
+  margin:0 0 1em 0;
+}
+
+#content h3 {
+  margin:0 0 1em 0;
+  font-size:1.3em;
+}
+
+#content pre {
+	font-family: Tahoma;
+	font-size: 1em;
+}
+
+#orderDataWrapper{
+	border-top: 1px solid #CCC;
+	padding:1.5em 0 0 0; 
+	width: 100%;
+	float: left;
+	text-align: center !important;
+}
+
+#orderDataWrapper * {
+	text-align: center !important;
+}
+
+#displayAmount{
+	width: 100%;
+	float: left;
+	text-align: center !important;
+	padding:0 0 1.5em 0; 
+}
+
+/* Table */
+table.basetable {
+	width:100%;
+	float:left;
+}
+
+/* Order Data Layout */
+table.od {
+}
+
+table.od td, table.od th  {
+	border-bottom: 1px solid #222;
+}
+
+table.od th {
+	font-weight: bold;
+}
+
+ul {
+	margin: 0;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+ul li {
+	margin: 0;
+	width: 100%;
+	float: left;
+	text-align: center;
+	border: 1px solid #F00;
+}
+
+/* Image Buttons (Payment Methods) */
+.imgB{
+	-webkit-appearance: none;
+	height: auto !important;
+	padding: 0.85em 2em;
+	border: 0;
+	background:#1DB5B6 !important;
+	overflow: hidden;
+	cursor: pointer; /* hand-shaped cursor */
+	cursor: hand; /* for IE 5.x */
+	color: #262626;
+	font-size:100%;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+	text-transform: uppercase;
+	float: none !important;
+}
+.imgB:hover, .imgB:active {
+	background: #139E9A !important;
+}
+
+.pmOcDetailSummary {
+	width:100%;
+	float:left;
+	text-align: center;
+}
+.pmOcRemove a
+	{
+		float: right;
+	}
+.pmOcDetailSummary div {
+	float:left;
+	padding-right:1em;
+}
+.pmOcDetailSummary div img {
+	float:left;
+}
+
+.r,
+.pmOcPay {
+	width:100%;
+	float:left;
+	text-align: center;
+}
+.pmOcPay {
+	padding-bottom:1em;
+	margin-bottom:2em;
+}
+		.r input,
+		.pmOcPay input[type=submit] {
+			text-transform: uppercase;
+			background:#EB655C;
+			color:#262626;
+			border-radius:5px;
+			font-size:1.5em;
+			float:none;
+			margin:0.5em 0;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			width:35% !important;
+			cursor: pointer;
+		}
+		.r input:hover,
+		.pmOcPay input[type=submit]:hover {
+			background:#D8504C;
+		}
+
+.footerB {
+}
+
+
+form>.imgB, form>.footerB  { /* For non-IE browsers*/
+	height: 0px;
+}
+
+.pmB {
+	
+}
+
+.pmmdetails {
+	float:left;
+	width:100%;
+	position: relative;
+	height: auto !important;
+}
+
+/* Image Buttons Footer (next/previous/pay) 64*/
+
+#footerb1div {
+	float: left;
+	text-align: center;
+}
+
+#footerb2div {
+	float: right;
+	text-align: right;
+}
+
+input.cancelB,
+input.nextB,
+input.backB,
+input.finishB {
+  display:inline-block;
+	background:#1DB5B6;
+  color:#262626;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  padding:5px 15px;
+  text-transform:uppercase;
+  cursor: pointer;
+	border:0;
+	width:auto !important;
+	float: none !important;
+}
+
+input.cancelB:hover,
+input.nextB:hover,
+input.backB:hover,
+input.finishB:hover {
+	background:#139E9A;
+}
+
+
+/* Links*/
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+} 
+
+/* Form elements */
+button:focus {
+	outline: none;
+}
+
+/* Validation */
+table.basetable {
+	width:100%;
+	float:left;
+	margin:1.5em 0;
+}
+table.basetable td {
+	width:64%;
+	vertical-align: top;
+	padding:0.25em 0;
+	text-align: left;
+}
+table.basetable td:first-child {
+	width:36%;
+}
+table.basetable td:first-child div {
+	padding:0.5em 0 0 0;
+}
+table.basetable td input {
+	width:95%;
+}
+table.basetable td select {
+	width:auto !important;
+	padding:5px 0 !important;
+	float:none !important;
+	display:inline-block !important;
+}
+
+
+.fieldDiv {
+	width:100%;
+}
+
+.errorDiv #cvcWhatIs{
+	color: #F90;
+}
+.errorDiv #cvcWhatIs:visited{
+	color: #F90;
+}
+
+
+.errorDiv #cvcWhatIs:hover{
+	color: #FFF;
+}
+
+
+.errorDiv input,
+.errorDiv select {
+	border:2px solid #F90;
+}
+
+.errorFrame {
+	background:#F90;
+}
+
+.red{
+	color: #000;
+}
+
+#errorFrameValidationErrors {
+	margin-left:0;
+}
+
+.bcfoot {
+color: #0094DE;
+float: right;
+text-align: right;
+}
+.pmBcard {
+margin-top:5px;
+}
+
+.fieldSubHeader{
+padding-top: 5px;
+font-weight: bold;
+font-family: Tahoma;
+color: #333333;
+font-size: 13px;
+}

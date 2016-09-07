@@ -1,0 +1,73 @@
+.headings
+	&.organisation
+
+		h1, h2
+			@media #{$small-tablet}
+				width: 65%
+				float: left
+
+		img
+			width: auto
+			height: auto
+			max-height: 60px
+			max-width: 30%
+			margin-left: 5%
+			margin-bottom: $base-margin
+			@media #{$small-tablet}
+				float: right
+				margin-bottom: 0
+
+.intro
+	position: relative
+	width: 100%
+	float: left
+
+	.carousel
+		float: right
+		width: 100%
+		position: relative
+		@media #{$tablet}
+			width: 65%
+
+		img
+			width: 100%
+			height: auto
+			float: left
+
+	.copy
+		float: left
+		width: 100%
+		text-align: center
+		line-height: 1.6
+		@media #{$small-tablet}
+			text-align: left
+		@media #{$tablet}
+			width: 30%
+			float: left
+			margin-top: -5px
+
+		p
+			&:first-child
+				color: $black
+				font-size: $base-fs*1.25
+
+		a
+			&.button
+				margin-bottom: $base-margin*1.5
+				@media #{$tablet}
+					margin-bottom: $base-margin*.5
+
+	.support
+		width: 65%
+		float: right
+		margin-top: $base-margin
+
+		p
+			text-transform: uppercase
+			font-weight: 700
+			color: $black
+			margin: 0
+
+
+
+

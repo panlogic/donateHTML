@@ -1,0 +1,52 @@
+footer
+	width: 100%
+	float: left
+
+	ul
+		list-style: none
+		margin: 0
+		padding: $base-margin 0
+		float: left
+
+		li
+			padding: 0 $base-margin*2 0 0
+			margin: 0
+			display: inline-block
+			font-size: $base-fs*.75
+
+	p
+		font-size: $base-fs*.75
+		width: 100%
+		float: left
+		margin-bottom: $base-margin*2
+
+	a
+		color: $text-light !important
+		&:hover
+			color: $white !important
+
+	.links
+		background: $grey-dark
+		width: 100%
+		float: left
+		padding: $base-margin 0
+
+		p
+			width: 70%
+			float: left
+			margin-bottom: $base-margin
+			&:first-child
+
+				a
+					color: $hover !important
+					font-weight: 700
+					display: inline-block
+					&:hover, &:focus
+						color: $link !important
+
+		ul
+			float: right
+			padding: 0 0 0 0
+
+			li
+				padding: 0 0 0 $base-margin*.5

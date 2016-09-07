@@ -1,0 +1,160 @@
+h1
+	&.filters
+		display: block
+		@media #{$small-tablet}
+			display: none
+
+		a
+			float: right
+
+.overlay
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background: rgba(0,0,0,.3)
+	z-index: 100
+	display: none
+	@media #{$small-tablet}
+		display: none
+
+.filters-container
+	position: fixed
+	top: 0
+	bottom: 0
+	right: -100%
+	width: 70%
+	padding: 5%
+	background: $white
+	z-index: 1000
+	overflow-x: auto
+	@media #{$small-tablet}
+		position: relative
+		width: 100%
+		right: auto
+		padding: 0
+		float: left
+		margin-top: $base-margin*.75
+
+	ul
+		display: none
+		@media #{$small-tablet}
+			display: block
+			width: 100%
+			float: left
+			margin: 0 0 $base-margin 0 
+			line-height: 1.1
+
+		li
+			display: inline-block
+			text-transform: uppercase
+			padding-right: $base-margin
+			float: left
+			color: $text-light
+
+			h1
+				padding: 0 $base-margin*.5 0 0
+
+			a
+				text-decoration: none
+				display: inline-block
+				line-height: 1.1
+				&:after
+					content: "\e900"
+					font-family: 'icomoon' !important
+					font-size: $base-fs*.85
+					padding-left: $base-margin*.5
+
+				&.selected
+					color: $black
+					&:after
+						content: "\e903"	
+
+	div
+		&.filters
+			width: 100%
+			float: left
+
+		p
+			margin-bottom: $base-margin
+			display: block
+			text-transform: uppercase
+			color: $text-light
+			@media #{$small-tablet}
+				display: none
+
+			a
+				float: right
+
+		h2
+			margin-bottom: $base-margin
+			display: block
+			cursor: pointer
+			color: $turq-dark
+			&:before
+				content: "\e900"
+				font-family: 'icomoon' !important
+				font-size: $base-fs*.85
+				padding-right: $base-margin*.5
+
+			&.selected
+				color: $black
+				&:before
+					content: "\e903"
+
+			@media #{$small-tablet}
+				display: none
+
+		div
+			margin-top: $base-margin*.5
+			margin-bottom: $base-margin
+			width: 100%
+			float: left
+			display: none
+
+			span
+				width: auto
+				float: left
+
+				input[type=checkbox]:not(old)
+					border: 0
+					clip: rect(0 0 0 0)
+					height: 1px
+					margin: -1px
+					overflow: visible
+					position: absolute
+					width: 1px !important
+					margin: 0 0 0 0 !important
+					padding: 0 0 0 0 !important
+
+				label
+					font-size: $base-fs*.85
+
+					em
+						display: inline-block
+						width: auto
+						float: left
+						margin-right: $base-margin*.5
+						display: inline-block
+						padding: $base-margin*.25 $base-margin*.75
+						background: $grey-light
+						text-align: center
+						+border-radius(3px)
+						font-style: normal
+						+transition(background,.5s)
+						&:hover
+							background: $black
+							color: $white
+
+				input[type=checkbox]:not(old):checked + label > em
+					background: $turq
+					color: $white
+
+
+
+
+
+
+
+

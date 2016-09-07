@@ -1,0 +1,278 @@
+.pager, .quote-pager
+	position: absolute
+	z-index: 1000
+	bottom: $base-margin
+	left: $base-margin
+
+	a
+		display: inline-block
+		width: 1.25em
+		height: 1.25em
+		+border-radius(50%)
+		background: rgba(29,181,182,.5)
+		margin-right: $base-margin*.5
+		text-indent: -2000em
+		+transition(background,.3s)
+		&:hover, &:focus
+			background: $turq
+		&.cycle-pager-active
+			background: $turq
+
+.donate
+	position: relative
+	width: 100%
+	float: left
+	@media #{$tablet}
+		padding-bottom: 0
+		margin-bottom: $base-margin
+
+	.carousel
+		float: right
+		width: 100%
+		position: relative
+		@media #{$tablet}
+			width: 65%
+
+		img
+			width: 100%
+			height: auto
+			float: left
+
+	.copy
+		float: left
+		width: 100%
+		@media #{$tablet}
+			width: 30%
+			float: left
+			margin-top: -5px
+
+		em
+			font-style: normal
+			font-size: $base-fs*1.5
+			color: $black
+			display: block
+			margin-bottom: $base-margin*.75
+			width: 100%
+			float: left
+			text-align: center
+			@media #{$small-tablet}
+				text-align: left
+				width: 100%
+				margin-bottom: $base-margin*1.5
+			@media #{$tablet}
+				font-size: $base-fs*1.75
+
+		a
+			color: $link
+			&:hover, &:focus
+				color: $hover
+			&.button
+				color: $black
+				&:hover, &:focus
+					color: $black
+				font-size: $base-fs*1.25
+				font-weight: 700
+				padding: $base-margin*.5 0
+				width: 40%
+				float: left
+				margin: 0 30% $base-margin 30%
+				@media #{$small-tablet}
+					margin: 4px 0 0 0
+					width: 60%
+					float: left
+				@media #{$tablet}
+					font-size: $base-fs*1.5
+
+		.feedback
+			padding-bottom: 0
+
+			.checkbox
+				margin-bottom: $base-margin*.75
+
+			a
+				&.secondary
+					padding: 0.85em $base-margin*2
+					width: auto
+					font-size: $base-fs
+					margin: 0 0 0 0
+
+			input
+				&[type=submit]
+					margin: 0 $base-margin 0 0
+
+	.quotes-container
+		width: 100%
+		float: left
+
+		a
+			&.button
+				padding: $base-margin*.85 0
+				width: 100%
+				@media #{$small-tablet}
+					width: 50%
+					margin-left: 25%
+				@media #{$tablet}
+					width: 30%
+					margin-left: 35%
+
+		.quotes
+			width: 100%
+			float: left
+			display: flex
+			flex-wrap: wrap
+			margin-top: $base-margin*2
+
+			blockquote
+				font-size: $base-fs*1.8
+				color: $black
+				padding: 0 0 $base-margin 0
+				float: left
+				order: 1
+				border-top: 1px solid $grey-mid
+				padding-top: $base-margin
+				@media #{$tablet}
+					width: 30%
+					margin-right: 5%
+					&:nth-child(3n)
+						margin-right: 0
+
+				span
+					font-size: $base-fs*.5
+					font-family: $font
+					display: block
+					padding-top: $base-margin*.5
+
+article
+	width: 100%
+	float: left
+
+	.copy
+		float: left
+		width: 100%
+		@media #{$tablet}
+			width: 65%
+
+		section
+			margin-bottom: $base-margin
+			width: 100%
+			float: left
+
+			.addthis_toolbox
+				margin-top: $base-margin
+
+	aside
+		float: left
+		width: 100%
+		margin-top: $base-margin
+		@media #{$tablet}
+			width: 30%
+			float: right
+			margin-top: 0
+
+		h2
+			text-transform: uppercase
+			border-top: 1px solid $grey
+			padding: $base-margin*1.5 0
+
+		blockquote
+			font-size: $base-fs*1.8
+			color: $black
+			border-top: 1px solid $grey
+			padding: $base-margin*2.25 0 0 0
+			float: left
+			z-index: 0
+			@media #{$tablet}
+				border-top: 0
+				padding: $base-margin*1.5 0 0 0
+
+			span
+				font-size: $base-fs*.5
+				font-family: $font
+				display: block
+				padding-top: $base-margin*.5
+
+		.quote-pager
+			position: absolute
+			z-index: 150
+			top: $base-margin*1.5
+			left: 0
+			margin: 0 0 $base-margin*1.5 0
+			@media #{$tablet}
+				top: 0
+
+		section
+			&:first-child
+
+				h2
+					border-top: 0
+					padding-top: 0
+
+			&.history
+
+				table
+					width: 100%
+					float: left
+					text-align: left
+
+					th
+						font-size: $base-fs*.75
+						text-transform: uppercase
+						font-weight: 400
+						color: $text-light
+						padding-bottom: $base-margin
+
+					td
+						font-size: $base-fs*.75
+						font-weight: 400
+						padding-bottom: $base-margin*.75
+
+	&.center
+
+		.copy
+			text-align: left
+			@media #{$tablet}
+				width: 60%
+				margin: 0 20%
+
+	&.double
+
+		.copy
+			@media #{$tablet}
+				width: 48%
+				&:last-child
+					float: right
+
+	footer
+		border-top: 1px solid $grey
+		padding-top: $base-margin*2
+		margin-top: $base-margin*1
+		@media #{$tablet}
+			padding-top: $base-margin*2.5
+
+		.copy
+			width: 65%
+			float: left
+
+			a
+				color: $link !important
+				&:hover, &:focus
+					color: $hover !important
+
+		h2
+			padding-bottom: $base-margin
+
+		p
+			font-size: $base-fs
+
+		img
+			width: auto
+			height: auto
+			max-height: 100px
+			max-width: 30%
+			float: right
+			margin-left: 5%
+			@media #{$small-tablet}
+				float: left
+
+
+

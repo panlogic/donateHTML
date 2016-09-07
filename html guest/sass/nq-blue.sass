@@ -1,0 +1,223 @@
+// colours
+$black: #262626
+$white: #FFF
+$grey-light: #EEE
+$grey: #DDD
+$grey-mid: #CCC
+$grey-dark: #333333
+
+$turq: #735b88 // light purple
+$turq-dark: #371556 // purple
+$red: #3771c6 // blue
+$red-dark: #14497f // dark blue
+$yellow: #735b88
+$yellow-dark: #371556
+$green: #57b764
+$green-dark: #39a447
+$orange: #F90
+$orange-dark: #f19201
+
+// text colours
+$text: #666666
+$text-light: #999999
+
+// link colours
+$link: #735b88
+$hover: #371556
+
+// fonts and margin
+$font: 'Source Sans Pro', sans-serif
+$hw-font: 'Source Sans Pro', sans-serif
+$base-fs: 1em
+$base-margin: 1em
+
+$xwidescreen: "all and (min-width:77em)"
+$widescreen: "all and (min-width:74em)"
+$desktop: "all and (min-width:64em)"
+$tablet: "all and (min-width:52em)"
+$small-tablet: "all and (min-width:40em)"
+$mobile: "all and (min-width:32em)"
+
+body
+	background: $white
+	font-family: $font
+	font-size: $base-fs
+
+.nfs-only
+	@media #{$widescreen}
+		max-width: 58.75em
+		margin: 0 auto
+
+	a
+		&:link, &:visited, &:active
+			color: $link
+		&:hover, &:focus
+			color: $hover
+
+		&.button
+			background: $red
+			color: $white
+			border: 0
+			&:hover, &:focus, &:active
+				background: $red-dark
+			&.turq
+				background: $turq
+				&:hover, &:focus, &:active
+					background: $turq-dark
+			&.yellow
+				background: $yellow
+				&:hover, &:focus, &:active
+					background: $yellow-dark
+			&.secondary
+				color: $text
+				background: $grey
+				&:hover, &:focus, &:active
+					background: $grey-mid
+
+	input,
+	textarea 
+		width: 100%
+		&[type=text], &[type=password], textarea
+			&:focus
+				border: 2px solid $turq
+				color: $turq-dark
+
+	.fancyform
+
+		input[type=checkbox]:not(old):checked + label > span,
+		input[type=radio]:not(old):checked + label > span
+			border: 2px solid $turq
+
+	input[type=button],
+	input[type=submit],
+	button
+		background: $red
+		color: $white
+		&:hover, &:focus
+			background: $red-dark
+		&.turq
+			background: $turq
+			&:hover, &:focus
+				background: $turq-dark
+
+	select 
+		width: 100%
+		&:focus
+			border: 2px solid $turq
+			color: $turq-dark
+
+	.message
+		&.turq-bg
+			background: $turq
+			color: $white
+
+	.search-bar
+		background: $red
+
+		form
+			@media #{$small-tablet}
+				width: 100%
+			@media #{$desktop}
+				width: 100%
+
+			label
+				font-family: $hw-font
+				color: $white
+
+	main
+
+		.highlight-bar
+			width: 100%
+			padding: 2.5%
+
+		.main-copy
+			@media #{$tablet}
+				width: 100%
+
+		.campaign-list
+
+			&.four
+
+				section
+					@media #{$tablet}
+						margin-left: 0
+
+			section
+
+				.copy
+					a
+						&:hover, &:focus
+							color: $hover
+
+					h2
+						a
+							&:hover, &:focus
+								color: $red
+
+		.pager
+
+			a
+				background: rgba(255,255,255,.5)
+				&:hover, &:focus
+					background: $red
+				&.cycle-pager-active
+					background: $red
+
+		.quote-pager
+
+			a
+				background: rgba(220,11,23,.4)
+				&:hover, &:focus
+					background: $red
+				&.cycle-pager-active
+					background: $red
+
+		.donate
+
+			.copy
+
+				a
+					color: $link
+					&:hover, &:focus
+						color: $hover
+					&.button
+						color: $white
+						&:hover, &:focus
+							color: $white
+						&.secondary
+							color: $text
+
+		article
+
+			footer
+
+				.copy
+
+					a
+						color: $link !important
+						&:hover, &:focus
+							color: $hover !important
+
+		form
+			&.donate
+
+				.fancyform
+					font-size: $base-fs*.9
+
+					.other
+						@media #{$desktop}
+							width: 50%
+							margin: $base-margin 0
+
+			&.login
+				@media #{$desktop}
+					width: 100%
+
+			&.center
+				@media #{$tablet}
+					width: 100%
+
+// Template fixes
+.footer-container .footer-strip 
+	float: left !important
+

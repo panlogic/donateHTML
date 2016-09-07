@@ -1,0 +1,85 @@
+.profile
+
+	table
+		width: 100%
+		float: left
+		margin-bottom: $base-margin*2
+		display: none
+		@media #{$small-tablet}
+			display: table
+
+		thead, tbody, tr
+			width: 100%
+
+		th, td
+			padding-top: $base-margin*.75
+			padding-bottom: $base-margin*.75
+			padding-right: $base-margin*1.25
+			border-bottom: 1px solid $grey
+			text-align: left
+
+		th
+			text-transform: uppercase
+			font-size: $base-fs*.75
+
+		td
+			&.no-trans
+				width: 100%
+
+	dl
+		width: 100%
+		float: left
+		margin-bottom: $base-margin*2
+		border-bottom: 1px solid $grey
+		display: block
+		@media #{$small-tablet}
+			display: none
+
+		dt
+			width: 100%
+			float: left
+			text-transform: uppercase
+			font-size: $base-fs*.75
+			font-weight: bold
+			padding-bottom: $base-margin*.25
+
+		dd
+			width: 100%
+			float: left
+			padding-bottom: $base-margin*.75
+
+	p
+		&.no-trans
+			display: block
+			@media #{$small-tablet}
+				display: none
+
+
+	a
+		&.show-info
+			padding-bottom: $base-margin
+			float: left
+			width: 100%
+
+	article
+
+		h2
+			text-transform: uppercase
+			border: 0
+			padding: 0 0 $base-margin*2 0
+
+		dl
+			width: 100%
+			float: left
+			padding: 0 0 $base-margin 0
+
+			dt
+				width: 30%
+				float: left
+				height: 2em
+
+			dd
+				width: 70%
+				float: left
+				height: 2em
+

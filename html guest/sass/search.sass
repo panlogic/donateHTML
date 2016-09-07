@@ -1,0 +1,67 @@
+.search-bar
+	width: 100%
+	float: left
+	background: $turq
+
+	form
+		float: left
+		width: 100%
+		padding: $base-margin*2 0
+		border: 0
+		@media #{$small-tablet}
+			width: 80%
+			padding: $base-margin*2 10%
+		@media #{$desktop}
+			width: 60%
+			padding: $base-margin*2 20%
+
+		label
+			font-family: $hw-font
+			font-size: $base-fs*2.25
+			color: $black
+			width: 100%
+			text-align: center
+			padding-bottom: $base-margin*.25
+			@media #{$small-tablet}
+				font-size: $base-fs*2.75
+			@media #{$tablet}
+				font-size: $base-fs*3.25
+
+		p
+			color: $white
+			text-align: center
+			font-weight: 700
+
+			a
+				color: $white
+
+		input
+			padding: $base-margin*.75 5% $base-margin*.75 2.5%
+			width: 92.5%
+			margin-right: -10%
+			margin-bottom: 0
+			float: left
+			border: 0
+			font-size: $base-fs
+			&[type=submit]
+				padding: $base-margin*.75 0
+				width: 10%
+				text-indent: -2000em
+				background: url(../images/search-icon.svg) no-repeat center center
+				+background-size(20px,20px)
+			&:focus
+				border: 0
+				color: $black
+			@media #{$small-tablet}
+				font-size: $base-fs*1.25
+				&[type=submit]
+					background: url(../images/search-icon.svg) no-repeat center center
+					+background-size(30px,30px)
+			@media #{$tablet}
+				font-size: $base-fs*1.5
+				&[type=submit]
+					background: url(../images/search-icon.svg) no-repeat center center
+					+background-size(40px,40px)
+
+
+

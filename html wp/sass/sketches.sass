@@ -1,0 +1,47 @@
+.sketches
+	width: 100%
+	float: left
+
+	h1
+		padding-bottom: 0
+		font-weight: 700
+
+	section
+		width: 100%
+		float: left
+		text-align: center
+		width: 30%
+		padding: $base-margin 0
+		margin-right: 5%
+		&:last-child
+			margin-right: 0
+
+		img
+			width: 80%
+			margin: $base-margin*.5 10%
+			height: auto
+			float: left
+			@media #{$mobile}
+				width: 100%
+				margin: 0 0 $base-margin*.5 0
+
+		h2
+			font-weight: 700
+			text-transform: uppercase
+			font-size: $base-fs
+			line-height: 1.4
+			@media #{$tablet}
+				line-height: 1.6
+
+		p
+			color: $black
+			margin: 0
+			font-size: $base-fs*.85
+			line-height: 1.3
+			font-family: $hw-font
+			font-weight: 300
+			@media #{$mobile}
+				font-size: $base-fs
+			@media #{$tablet}
+				font-size: $base-fs*1.25
+

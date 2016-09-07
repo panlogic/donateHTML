@@ -1,0 +1,34 @@
+/*
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.
+        on line 12 of /Users/ebclark/Dropbox/freelance/panlogic/NFS/summer 2015/html/sass/structure.sass
+
+7: 		color: $text
+8: 		background: $grey-light
+9: 
+10: // styles
+11: .nfs-only
+12:   @import "boilerplate"
+13:   @import "structure"
+14:   @import "header"
+15:   @import "search"
+16:   @import "main"
+17:   @import "forms"
+
+Backtrace:
+/Users/ebclark/Dropbox/freelance/panlogic/NFS/summer 2015/html/sass/structure.sass:12
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:473:in `block in tabulate'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:431:in `each'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:431:in `each_with_index'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:431:in `tabulate'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:396:in `_to_tree'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:268:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:415:in `run'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/sass:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 12 of /Users/ebclark/Dropbox/freelance/panlogic/NFS/summer 2015/html/sass/structure.sass\A \A 7: 		color: $text\A 8: 		background: $grey-light\A 9: \A 10: // styles\A 11: .nfs-only\A 12:   @import \"boilerplate\"\A 13:   @import \"structure\"\A 14:   @import \"header\"\A 15:   @import \"search\"\A 16:   @import \"main\"\A 17:   @import \"forms\""; }

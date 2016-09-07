@@ -1,0 +1,30 @@
+.logos
+	width: 100%
+	float: left
+	text-align: center
+	padding: $base-margin*.5 0
+
+	ul
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		list-style: none
+		margin: 0
+		@media #{$tablet}
+			flex-wrap: nowrap
+
+		li
+			vertical-align: middle
+			padding-left: $base-margin
+
+			img
+				width: auto
+				max-height: 60px
+				margin: $base-margin*.5 0
+
+			&:first-child
+				padding-left: 0
+
+
+

@@ -1,0 +1,138 @@
+body {
+  background: #FFF;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em; }
+
+@media all and (min-width: 74em) {
+  .nfs-only {
+    max-width: 58.75em;
+    margin: 0 auto; } }
+.nfs-only a:link, .nfs-only a:visited, .nfs-only a:active {
+  color: #735b88; }
+.nfs-only a:hover, .nfs-only a:focus {
+  color: #371556; }
+.nfs-only a.button {
+  background: #3771c6;
+  color: #FFF;
+  border: 0; }
+  .nfs-only a.button:hover, .nfs-only a.button:focus, .nfs-only a.button:active {
+    background: #14497f; }
+  .nfs-only a.button.turq {
+    background: #735b88; }
+    .nfs-only a.button.turq:hover, .nfs-only a.button.turq:focus, .nfs-only a.button.turq:active {
+      background: #371556; }
+  .nfs-only a.button.yellow {
+    background: #735b88; }
+    .nfs-only a.button.yellow:hover, .nfs-only a.button.yellow:focus, .nfs-only a.button.yellow:active {
+      background: #371556; }
+  .nfs-only a.button.secondary {
+    color: #666666;
+    background: #DDD; }
+    .nfs-only a.button.secondary:hover, .nfs-only a.button.secondary:focus, .nfs-only a.button.secondary:active {
+      background: #CCC; }
+.nfs-only input,
+.nfs-only textarea {
+  width: 100%; }
+  .nfs-only input[type=text]:focus, .nfs-only input[type=password]:focus, .nfs-only input textarea:focus,
+  .nfs-only textarea[type=text]:focus,
+  .nfs-only textarea[type=password]:focus,
+  .nfs-only textarea textarea:focus {
+    border: 2px solid #735b88;
+    color: #371556; }
+.nfs-only .fancyform input[type=checkbox]:not(old):checked + label > span,
+.nfs-only .fancyform input[type=radio]:not(old):checked + label > span {
+  border: 2px solid #735b88; }
+.nfs-only input[type=button],
+.nfs-only input[type=submit],
+.nfs-only button {
+  background: #3771c6;
+  color: #FFF; }
+  .nfs-only input[type=button]:hover, .nfs-only input[type=button]:focus,
+  .nfs-only input[type=submit]:hover,
+  .nfs-only input[type=submit]:focus,
+  .nfs-only button:hover,
+  .nfs-only button:focus {
+    background: #14497f; }
+  .nfs-only input[type=button].turq,
+  .nfs-only input[type=submit].turq,
+  .nfs-only button.turq {
+    background: #735b88; }
+    .nfs-only input[type=button].turq:hover, .nfs-only input[type=button].turq:focus,
+    .nfs-only input[type=submit].turq:hover,
+    .nfs-only input[type=submit].turq:focus,
+    .nfs-only button.turq:hover,
+    .nfs-only button.turq:focus {
+      background: #371556; }
+.nfs-only select {
+  width: 100%; }
+  .nfs-only select:focus {
+    border: 2px solid #735b88;
+    color: #371556; }
+.nfs-only .message.turq-bg {
+  background: #735b88;
+  color: #FFF; }
+.nfs-only .search-bar {
+  background: #3771c6; }
+  @media all and (min-width: 40em) {
+    .nfs-only .search-bar form {
+      width: 100%; } }
+  @media all and (min-width: 64em) {
+    .nfs-only .search-bar form {
+      width: 100%; } }
+  .nfs-only .search-bar form label {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #FFF; }
+.nfs-only main .highlight-bar {
+  width: 100%;
+  padding: 2.5%; }
+@media all and (min-width: 52em) {
+  .nfs-only main .main-copy {
+    width: 100%; } }
+@media all and (min-width: 52em) {
+  .nfs-only main .campaign-list.four section {
+    margin-left: 0; } }
+.nfs-only main .campaign-list section .copy a:hover, .nfs-only main .campaign-list section .copy a:focus {
+  color: #371556; }
+.nfs-only main .campaign-list section .copy h2 a:hover, .nfs-only main .campaign-list section .copy h2 a:focus {
+  color: #3771c6; }
+.nfs-only main .pager a {
+  background: rgba(255, 255, 255, 0.5); }
+  .nfs-only main .pager a:hover, .nfs-only main .pager a:focus {
+    background: #3771c6; }
+  .nfs-only main .pager a.cycle-pager-active {
+    background: #3771c6; }
+.nfs-only main .quote-pager a {
+  background: rgba(220, 11, 23, 0.4); }
+  .nfs-only main .quote-pager a:hover, .nfs-only main .quote-pager a:focus {
+    background: #3771c6; }
+  .nfs-only main .quote-pager a.cycle-pager-active {
+    background: #3771c6; }
+.nfs-only main .donate .copy a {
+  color: #735b88; }
+  .nfs-only main .donate .copy a:hover, .nfs-only main .donate .copy a:focus {
+    color: #371556; }
+  .nfs-only main .donate .copy a.button {
+    color: #FFF; }
+    .nfs-only main .donate .copy a.button:hover, .nfs-only main .donate .copy a.button:focus {
+      color: #FFF; }
+    .nfs-only main .donate .copy a.button.secondary {
+      color: #666666; }
+.nfs-only main article footer .copy a {
+  color: #735b88 !important; }
+  .nfs-only main article footer .copy a:hover, .nfs-only main article footer .copy a:focus {
+    color: #371556 !important; }
+.nfs-only main form.donate .fancyform {
+  font-size: 0.9em; }
+  @media all and (min-width: 64em) {
+    .nfs-only main form.donate .fancyform .other {
+      width: 50%;
+      margin: 1em 0; } }
+@media all and (min-width: 64em) {
+  .nfs-only main form.login {
+    width: 100%; } }
+@media all and (min-width: 52em) {
+  .nfs-only main form.center {
+    width: 100%; } }
+
+.footer-container .footer-strip {
+  float: left !important; }

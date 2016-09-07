@@ -1,0 +1,263 @@
+.orange
+	color: $yellow-dark !important
+.green
+	color: $green !important
+
+.auction
+	
+	h1
+		Width: auto
+
+	form
+		&.inline
+			border-top: 0
+			padding: 0
+			width: 99%
+			margin-bottom: $base-margin*.5
+			@media #{$mobile}
+				width: 47%
+				float: right
+				margin-right: 0
+			@media #{$tablet}
+				width: 30%
+
+			fieldset
+				padding: 0
+
+			label
+				float: left
+				width: auto
+
+			input
+				float: left
+				margin: 0
+				padding-right: 10%
+				padding-left: 5%
+				width: 100%
+				border: 2px solid $grey-light
+				&:focus
+					border: 2px solid $turq
+				&[type=submit],
+				&[type=button]
+					padding-left: 0
+					padding-right: 0
+					margin: -3.2em 2px 0 0
+					float: right
+					width: 10%
+					text-indent: -2000em
+					border: 0
+					background: $white url(../images/search-icon.svg) no-repeat center center
+					+background-size(20px,20px)
+
+	.campaign-list
+		&.lots
+
+			section
+
+				h2
+					a
+						&:hover, &:focus
+							color: $yellow-dark
+
+				h3
+					float: left
+					width: 100%
+
+					span
+						width: 39%
+						float: left
+						font-size: $base-fs*.9
+						&:last-child
+							width: 59%
+							text-align: right
+							float: right
+
+					strong
+						color: $black
+						font-size: $base-fs*1.3
+						font-weight: 400
+						padding-bottom: $base-margin*.25
+						display: block
+						&.orange, &.green
+							font-weight: 600
+
+				p
+					a
+						color: $yellow-dark
+						&:hover, &:focus
+							color: $yellow
+
+				a
+					&.button
+						background: $yellow
+						&:hover, &:focus, &:active
+							background: $yellow-dark
+
+.highlight-bar
+	&.event
+		position: relative
+
+		img
+			&.event
+				position: absolute
+				top: 0
+				right: 0
+				width: 15%
+				height: auto
+				z-index: 1000000
+				@media #{$tablet}
+					width: 10%
+
+.intro
+
+	&.lot
+
+		.message
+			width: 95%
+			float: left
+			padding: $base-margin*.5 2.5%
+			background: $turq 
+			color: $white
+			text-align: center
+			&.winning
+				background: $green 
+			&.outbid
+				background: $yellow-dark
+				color: $black
+
+				a
+					color: $black
+
+		h1
+			font-weight: 400
+
+		.copy
+			margin-top: 1px
+
+			h3
+				width: 100%
+				float: left
+				margin-bottom: $base-margin*1.5
+				padding-top: $base-margin*1.25
+				border-top: 1px solid $grey-mid
+				padding-bottom: $base-margin*1.5
+				border-bottom: 1px solid $grey-mid
+
+				span
+					width: 49%
+					float: left
+					font-size: $base-fs*.8
+					color: $text-light
+					text-align: left
+					&:last-child
+						text-align: right
+						float: right
+					&.h2
+						width: 100%
+						color: $black
+						font-size: $base-fs*1.5
+						font-weight: 400
+						text-align: center
+						margin-bottom: $base-margin*.75
+
+				strong
+					color: $black
+					font-size: $base-fs*1.8
+					font-weight: 400
+					padding-top: $base-margin*.2
+					padding-bottom: $base-margin*.2
+					display: block
+					&.orange, &.green
+						font-weight: 600
+					@media #{$tablet}
+						font-size: $base-fs*1.2
+					@media #{$desktop}
+						font-size: $base-fs*1.5
+
+			a
+				&.button
+					width: 100%
+					padding-left: 0
+					padding-right: 0
+					margin-bottom: $base-margin*1.5
+				&.green
+					background: $green
+					color: $white !important
+					&:hover, &:focus
+						background: $green-dark
+
+			form
+				border-top: 0
+				padding-top: 0
+				padding-bottom: $base-margin
+
+				fieldset
+					padding-bottom: $base-margin*1.5
+
+				p
+					margin-bottom: $base-margin*.75
+					font-size: $base-fs*.8
+					&.checkbox
+						text-align: left
+
+					label
+						color: $text-light
+
+				input
+					width: 100%
+					&[type=submit]
+						width: 100%
+						background: $yellow
+						border: 0
+						margin-bottom: 0
+						&:hover, &:focus
+							background: $yellow-dark
+							border: 0
+
+			&.center
+				text-align: center
+
+				a
+					&.button
+						width: auto
+						padding-left: $base-margin*2 
+						padding-right: $base-margin*2
+						margin: $base-margin*.5 0 
+						&:last-child
+							margin-bottom: $base-margin*2
+
+				strong
+					&.full
+						display: block
+
+			&.full
+				width: 100%
+				@media #{$tablet}
+					width: 60%
+					padding-left: 20%
+					padding-right: 20%
+
+				a
+					&.button
+						width: auto
+						padding-left: $base-margin*2 
+						padding-right: $base-margin*2 
+
+				strong
+					&.padding
+						padding: 0 $base-margin
+
+	&.half
+
+		.copy
+			@media #{$small-tablet}
+				width: 47.5%
+
+		.carousel
+			@media #{$small-tablet}
+				width: 47.5%
+
+
+
+
+

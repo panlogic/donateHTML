@@ -1,0 +1,75 @@
+// mixin library
+@import "mixins"
+
+// colours
+$black: #262626
+$white: #FFF
+$grey-light: #EEE
+$grey: #DDD
+$grey-mid: #CCC
+$grey-dark: #333333
+
+$turq: #1DB5B6
+$turq-dark: #139E9A
+$red: #EB655C
+$red-dark: #D8504C
+$yellow: #FCC04E
+$yellow-dark: #f5aa1d
+$green: #57b764
+$green-dark: #39a447
+$orange: #F90
+$orange-dark: #f19201
+
+// text colours
+$text: #666666
+$text-light: #999999
+
+// link colours
+$link: #038484
+$hover: #1DB5B6
+
+// Fonts and margins
+$font: 'Open Sans', sans-serif
+$hw-font: Kalam, sans-serif
+$base-fs: 1em
+$base-margin: 1em
+
+$xwidescreen: "all and (min-width:77em)"
+$widescreen: "all and (min-width:74em)"
+$desktop: "all and (min-width:64em)"
+$tablet: "all and (min-width:52em)"
+$small-tablet: "all and (min-width:40em)"
+$mobile: "all and (min-width:32em)"
+
+// styles
+@import "boilerplate"
+
+body
+	color: $text-light
+	background: $black
+	font-family: $font
+	font-size: $base-fs
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	vertical-align: baseline
+	&.event-tablet
+		color: $text
+		background: $grey-light
+
+.nfs-only
+	@import "structure"
+	@import "header"
+	@import "search"
+	@import "main"
+	@import "overlay"
+	@import "forms"
+	@import "footer"
+
+.display-screens
+	@import "auction-screens"
+	@import "event-screen"
+
+
+

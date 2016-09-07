@@ -1,0 +1,1966 @@
+@charset "UTF-8";
+/**
+ * HTML5 ✰ Boilerplate
+ *
+ * style.css contains a reset, font normalization and some base styles.
+ *
+ * Credit is left where credit is due.
+ * Much inspiration was taken from these projects:
+ * - yui.yahooapis.com/2.8.1/build/base/base.css
+ * - camendesign.com/design/
+ * - praegnanz.de/weblog/htmlcssjs-kickstart
+ */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+html, body, body div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+ins {
+  background-color: #ff9;
+  color: #262626;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #262626;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #DDD;
+  margin: 1em 0;
+  padding: 0; }
+
+::-webkit-input-placeholder {
+  color: #999999; }
+
+:-moz-placeholder {
+  color: #999999; }
+
+::-moz-placeholder {
+  color: #999999; }
+
+:-ms-input-placeholder {
+  color: #999999; }
+
+/**
+ * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
+ */
+body {
+  font: 1em/1.231 sans-serif;
+  *font-size: small; }
+
+/* Normalize monospace sizing:
+ * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/**
+ * Minimal base styles.
+ */
+/* 1) Always force a scrollbar in non-IE
+ * 2) Remove iOS text size adjust without disabling user zoom: www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* j.mp/webkit-tap-highlight-color */
+a:link {
+  -webkit-tap-highlight-color: #262626; }
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {
+  outline: none; }
+
+a, a:active, a:visited {
+  text-decoration: none; }
+
+a:hover, a:focus {
+  text-decoration: underline; }
+
+ul, ol {
+  margin-left: 2em; }
+
+ol {
+  list-style-type: decimal; }
+
+/* Remove margins for navigation lists */
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none; }
+
+small {
+  font-size: 85%; }
+
+b, strong, th {
+  font-weight: bold; }
+
+td {
+  vertical-align: top; }
+
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+pre {
+  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px; }
+
+/* 1) Make inputs and buttons play nice in IE: www.viget.com/inspire/styling-the-button-element-in-internet-explorer/
+ * 2) WebKit browsers add a 2px margin outside the chrome of form elements. 
+ *    Firefox adds a 1px margin above and below textareas 
+ * 3) Set font-size to match <body>'s, and font-family to sans-serif 
+ * 4) Align to baseline */
+button, input, select, textarea {
+  width: auto;
+  overflow: visible;
+  margin: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+  vertical-align: baseline; }
+
+/* 1) Remove default scrollbar in IE: www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/
+ * 2) Align to text-top */
+textarea {
+  overflow: auto;
+  vertical-align: text-top; }
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button {
+  cursor: pointer; }
+
+/* Remove extra padding and inner border in Firefox */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* Colors for form validity */
+input:invalid, textarea:invalid {
+  border-radius: 1px;
+  -moz-box-shadow: 0px 0px 5px red;
+  -webkit-box-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red; }
+
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: #f0dddd; }
+
+/* Bicubic resizing for non-native sized IMG:
+ * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/**
+ * You might tweak these..
+ */
+body, select, input, textarea {
+  /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
+  color: #444;
+  /* Set your base font here, to apply evenly */
+  /* font-family: Georgia, serif  */ }
+
+/* Headers (h1, h2, etc) have no default font-size or margin define those yourself */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+/* These selection declarations have to be separate
+ * No text-shadow: twitter.com/miketaylr/status/12228805301
+ * Also: hot pink! */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+/* For image replacement */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr; }
+
+.ir br {
+  display: none; }
+
+/* Hide for both screenreaders and browsers:
+ * css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+ * www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px !important; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden; }
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+ * nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+/**
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+    * a, * a:visited {
+      color: #444 !important;
+      text-decoration: underline; }
+    * a[href]:after {
+      content: " (" attr(href) ")"; }
+    * abbr[title]:after {
+      content: " (" attr(title) ")"; }
+    * .ir a:after, * a[href^="javascript:"]:after, * a[href^="#"]:after {
+      content: ""; }
+    * pre, * blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid; }
+    * thead {
+      display: table-header-group; }
+    * tr, * img {
+      page-break-inside: avoid; }
+    * img {
+      max-width: 100% !important; }
+  @page {
+    * {
+      margin: 0.5cm; } }
+    * p, * h2, * h3 {
+      orphans: 3;
+      widows: 3; }
+    * h2, * h3 {
+      page-break-after: avoid; } }
+body {
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em; }
+
+h1 {
+  font-size: 1.5em;
+  line-height: 1.1;
+  color: #262626;
+  font-weight: 700; }
+  @media all and (min-width: 52em) {
+    h1 {
+      font-size: 1.75em; } }
+  h1.small {
+    font-size: 1em; }
+  h1.caps {
+    text-transform: uppercase; }
+
+h2 {
+  font-size: 1em;
+  line-height: 1.1;
+  color: #262626;
+  font-weight: 600; }
+  h2 a {
+    line-height: 1.3 !important; }
+
+h3 {
+  font-size: 1em;
+  line-height: 1.3;
+  color: #262626;
+  font-weight: 400; }
+  h3 a {
+    line-height: 1.3 !important; }
+
+p, ul, ol {
+  margin-bottom: 1.5em;
+  line-height: 1.6; }
+  p.grey, ul.grey, ol.grey {
+    color: #999999; }
+  p.center, ul.center, ol.center {
+    text-align: center;
+    width: 100%;
+    float: left; }
+  p li p, p li li, ul li p, ul li li, ol li p, ol li li {
+    font-size: 1em; }
+
+.small {
+  font-size: 0.75em !important; }
+
+a:link, a:visited, a:active {
+  text-decoration: underline;
+  line-height: 1.4;
+  color: #068585; }
+a:hover, a:focus {
+  color: #14bbba; }
+a.button {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #262626;
+  background: #EB655C;
+  padding: 0.85em 2em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  transition: background 0.3s;
+  font-weight: 700; }
+  a.button:hover, a.button:focus, a.button:active {
+    background: #D8504C; }
+  a.button.turq {
+    background: #14bbba; }
+    a.button.turq:hover, a.button.turq:focus, a.button.turq:active {
+      background: #068585; }
+  a.button.yellow {
+    background: #FCC04E; }
+    a.button.yellow:hover, a.button.yellow:focus, a.button.yellow:active {
+      background: #EFA329; }
+  a.button.margin-top {
+    margin-top: 0.5em; }
+
+strong {
+  font-weight: 700; }
+
+blockquote {
+  font-family: Kalam, sans-serif;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+  color: #068585; }
+  blockquote p {
+    line-height: 1.3em; }
+  blockquote span {
+    display: block;
+    font-size: 0.6em;
+    padding-top: 0.5em;
+    font-family: "Open Sans", sans-serif;
+    color: #666666; }
+
+svg {
+  height: 1px;
+  overflow: visible;
+  fill: #262626; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+  img.alignleft {
+    float: left;
+    margin-right: 2em;
+    max-width: 40%; }
+  img.alignright {
+    float: right;
+    margin-left: 2em;
+    max-width: 40%; }
+
+label {
+  width: 100%;
+  float: left;
+  padding-bottom: 0.5em;
+  color: #666666; }
+
+input,
+textarea {
+  width: 100%;
+  float: left;
+  padding: 0.85em 3%;
+  box-sizing: border-box;
+  border: 2px solid #FFF;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: #FFF;
+  margin-bottom: 1em;
+  outline: none; }
+  input[type=text],
+  textarea[type=text] {
+    -webkit-appearance: none; }
+  input[type=checkbox], input[type=radio],
+  textarea[type=checkbox],
+  textarea[type=radio] {
+    width: auto !important;
+    padding: 0 0 0 0 !important;
+    margin: 0.2em 0.5em 0 0 !important;
+    border: 0; }
+  input[type=text]:focus, input[type=password]:focus, input textarea:focus,
+  textarea[type=text]:focus,
+  textarea[type=password]:focus,
+  textarea textarea:focus {
+    border: 2px solid #14bbba;
+    color: #068585; }
+
+textarea {
+  height: 6em; }
+
+.fancyform div {
+  display: inline-block;
+  margin: 0 1em; }
+.fancyform input[type=checkbox]:not(old),
+.fancyform input[type=radio]:not(old) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  width: 1px !important; }
+.fancyform input[type=checkbox]:not(old) + label,
+.fancyform input[type=radio]:not(old) + label {
+  display: inline-block;
+  margin-left: 0;
+  padding-bottom: 0; }
+.fancyform input[type=checkbox]:not(old) + label em,
+.fancyform input[type=radio]:not(old) + label em {
+  line-height: 1.5em;
+  font-size: 1.75em;
+  margin: 0 0 0 0.5em;
+  padding-bottom: 0.25em;
+  display: inline-block;
+  font-style: normal;
+  color: #262626; }
+.fancyform input[type=checkbox]:not(old) + label em {
+  padding-bottom: 0.1em; }
+.fancyform input[type=checkbox]:not(old) + label > span,
+.fancyform input[type=radio]:not(old) + label > span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border: 2px solid #FFF;
+  background: #FFF;
+  vertical-align: bottom;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+.fancyform input[type=radio]:not(old) + label > span {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }
+.fancyform input[type=checkbox]:not(old):checked + label > span,
+.fancyform input[type=radio]:not(old):checked + label > span {
+  border: 2px solid #14bbba; }
+.fancyform input[type=checkbox]:not(old):checked + label > span > span {
+  display: block;
+  width: 42px;
+  height: 40px;
+  background: url(../images/tick.svg) no-repeat center center;
+  -webkit-background-size: 42px 40px !important;
+  -moz-background-size: 42px 40px !important;
+  -o-background-size: 42px 40px !important;
+  background-size: 42px 40px !important;
+  margin: -7px 0 0 7px;
+  cursor: pointer; }
+.fancyform input[type=radio]:not(old):checked + label > span > span {
+  display: block;
+  width: 47px;
+  height: 45px;
+  background: url(../images/tick.svg) no-repeat center center;
+  -webkit-background-size: 47px 45px !important;
+  -moz-background-size: 47px 45px !important;
+  -o-background-size: 47px 45px !important;
+  background-size: 47px 45px !important;
+  margin: -5px 0 0 8px;
+  cursor: pointer; }
+
+input[type=button],
+input[type=submit],
+button {
+  width: auto;
+  padding-left: 2em;
+  padding-right: 2em;
+  border: 0;
+  background: #EB655C;
+  text-transform: uppercase;
+  color: #262626;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-appearance: none; }
+  input[type=button].large,
+  input[type=submit].large,
+  button.large {
+    font-size: 1.5em;
+    padding-top: 0.65em;
+    padding-bottom: 0.65em; }
+  input[type=button]:hover, input[type=button]:focus,
+  input[type=submit]:hover,
+  input[type=submit]:focus,
+  button:hover,
+  button:focus {
+    background: #D8504C; }
+  input[type=button].turq,
+  input[type=submit].turq,
+  button.turq {
+    background: #14bbba; }
+    input[type=button].turq:hover, input[type=button].turq:focus,
+    input[type=submit].turq:hover,
+    input[type=submit].turq:focus,
+    button.turq:hover,
+    button.turq:focus {
+      background: #068585; }
+  input[type=button] em,
+  input[type=submit] em,
+  button em {
+    font-style: normal; }
+  input[type=button] span,
+  input[type=submit] span,
+  button span {
+    font-size: 0.85em; }
+
+select {
+  width: 100.75%;
+  float: left;
+  padding: 0.85em 1%;
+  margin-bottom: 1em;
+  outline: none;
+  height: 3.3em;
+  background: #FFF;
+  border: 2px solid #FFF;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  select:focus {
+    border: 2px solid #14bbba;
+    color: #068585; }
+
+#site {
+  width: 100%;
+  float: left; }
+
+.inner {
+  padding: 0 5%; }
+  .inner.center {
+    text-align: center; }
+  @media all and (min-width: 52em) {
+    .inner {
+      padding: 0 2.5%; } }
+  @media all and (min-width: 74em) {
+    .inner {
+      padding: 0;
+      margin: 0 auto;
+      max-width: 72em; } }
+
+.media-test {
+  width: 100px; }
+  @media all and (min-width: 52em) {
+    .media-test {
+      width: 200px; } }
+
+.mobile-only {
+  display: block; }
+  @media all and (min-width: 52em) {
+    .mobile-only {
+      display: none; } }
+
+.tablet-only {
+  display: block; }
+  @media all and (min-width: 64em) {
+    .tablet-only {
+      display: none; } }
+
+.desktop-only {
+  display: none; }
+  @media all and (min-width: 64em) {
+    .desktop-only {
+      display: block; } }
+
+header {
+  background: #FFF;
+  width: 100%;
+  float: left; }
+  header a.button {
+    padding: 0.25em 0.75em;
+    font-weight: 600;
+    text-transform: none;
+    font-size: 0.85em;
+    float: right;
+    text-transform: uppercase; }
+    @media all and (min-width: 52em) {
+      header a.button {
+        display: none; } }
+    header a.button.donate {
+      text-transform: uppercase;
+      background: #EB655C; }
+      header a.button.donate:hover, header a.button.donate:focus {
+        background: #D8504C; }
+      @media all and (min-width: 30em) {
+        header a.button.donate {
+          float: right; } }
+    header a.button.join {
+      background: #FCC04E; }
+      header a.button.join:hover, header a.button.join:focus {
+        background: #EFA329; }
+      @media all and (min-width: 30em) {
+        header a.button.join {
+          float: right; } }
+    header a.button em {
+      color: #14bbba;
+      font-style: normal; }
+  header nav {
+    width: 100%;
+    float: left; }
+    header nav a.logo {
+      display: inline-block;
+      float: left;
+      margin: 1em 0; }
+      header nav a.logo img {
+        width: auto;
+        height: 20px;
+        float: left; }
+        @media all and (min-width: 52em) {
+          header nav a.logo img {
+            height: 26px; } }
+    header nav a.show-menu {
+      float: right;
+      margin-top: 1.1em; }
+      @media all and (min-width: 52em) {
+        header nav a.show-menu {
+          margin-top: 1.25em; } }
+      @media all and (min-width: 64em) {
+        header nav a.show-menu {
+          display: none; } }
+      header nav a.show-menu em {
+        display: block;
+        float: left;
+        font-style: normal;
+        color: #262626;
+        text-transform: uppercase;
+        font-size: 0.95em;
+        margin-right: 0.5em; }
+      header nav a.show-menu > span {
+        display: block;
+        float: right;
+        width: 1.5em; }
+        header nav a.show-menu > span span {
+          display: block;
+          width: 1.5em;
+          height: 3px;
+          margin: 5px 0;
+          background: #262626;
+          -webkit-border-radius: 1.5px;
+          -moz-border-radius: 1.5px;
+          -ms-border-radius: 1.5px;
+          border-radius: 1.5px; }
+          header nav a.show-menu > span span:first-child {
+            margin-top: 0; }
+          header nav a.show-menu > span span:last-child {
+            margin-bottom: 0; }
+      header nav a.show-menu.open em {
+        color: #14bbba; }
+      header nav a.show-menu.open > span span {
+        background: #14bbba; }
+    header nav ul {
+      display: none;
+      width: 100%;
+      float: left;
+      margin-bottom: 0.8em; }
+      @media all and (min-width: 64em) {
+        header nav ul {
+          width: 85%;
+          display: inline-block;
+          float: right;
+          margin-top: 0.8em;
+          margin-bottom: 0; } }
+      header nav ul li {
+        padding: 0.5em 0;
+        line-height: 1; }
+        @media all and (min-width: 52em) {
+          header nav ul li {
+            display: inline-block;
+            padding: 0.6em 1em 0 0; }
+            header nav ul li:last-child {
+              padding-right: 0; }
+            header nav ul li.mobile {
+              display: none; } }
+        @media all and (min-width: 64em) {
+          header nav ul li {
+            padding: 0.5em 0 0 1.25em; }
+            header nav ul li:last-child {
+              padding-left: 0; } }
+        header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active {
+          color: #262626;
+          font-weight: 600;
+          text-decoration: none;
+          line-height: 1; }
+        header nav ul li a em {
+          font-style: normal;
+          color: #14bbba; }
+        header nav ul li a.button {
+          display: inline-block;
+          font-size: 0.95em;
+          padding: 0.6em 1em;
+          margin-right: 1em;
+          margin-top: 0.5em; }
+          @media all and (min-width: 52em) {
+            header nav ul li a.button {
+              padding: 0.6em 0.6em;
+              margin-right: 0;
+              margin-top: 0; }
+              header nav ul li a.button:first-child {
+                margin-left: 0.5em; } }
+          @media all and (min-width: 64em) {
+            header nav ul li a.button:first-child {
+              margin-left: 1em; } }
+        header nav ul li:last-child {
+          float: left; }
+          @media all and (min-width: 52em) {
+            header nav ul li:last-child {
+              float: right;
+              padding-top: 0; } }
+
+.search form {
+  float: left;
+  width: 100%;
+  padding: 0 0;
+  border: 0; }
+  @media all and (min-width: 40em) {
+    .search form {
+      width: 80%;
+      padding: 0 10%; } }
+  @media all and (min-width: 64em) {
+    .search form {
+      width: 60%;
+      padding: 0 20%; } }
+  .search form label {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #262626;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1em; }
+    @media all and (min-width: 52em) {
+      .search form label {
+        font-size: 1.75em; } }
+  .search form input {
+    width: 100%; }
+    @media all and (min-width: 30em) {
+      .search form input {
+        width: 77.5%; } }
+    .search form input[type=submit] {
+      width: auto;
+      float: none; }
+      @media all and (min-width: 30em) {
+        .search form input[type=submit] {
+          width: 20%;
+          padding: 0.95em 0;
+          float: right; } }
+
+main {
+  background: #FFF;
+  color: #666666;
+  width: 100%;
+  float: left; }
+  main h1, main h2 {
+    width: 100%;
+    float: left; }
+  main .highlight-bar {
+    width: 100%;
+    float: left;
+    padding: 2em 0;
+    padding-top: 1.5em; }
+    @media all and (min-width: 52em) {
+      main .highlight-bar {
+        padding-top: 2em; } }
+    main .highlight-bar.center {
+      text-align: center; }
+    main .highlight-bar.turq {
+      background: #14bbba; }
+    main .highlight-bar.grey-lt {
+      background: #EEE; }
+    main .highlight-bar.grey-dk {
+      background: #DDD; }
+    main .highlight-bar.border {
+      border-top: 10px solid rgba(3, 132, 132, 0.1); }
+    main .highlight-bar h1 {
+      padding-bottom: 1em; }
+  main .intro {
+    padding: 2em 0 0; }
+    main .intro img {
+      display: none; }
+      @media all and (min-width: 64em) {
+        main .intro img {
+          height: 3em;
+          width: auto;
+          margin: 0 0 2em 0;
+          display: inline-block; } }
+    main .intro h1 {
+      font-size: 1.8em;
+      padding-bottom: 0; }
+      main .intro h1.margin-bottom {
+        margin-bottom: 1.5em; }
+      @media all and (min-width: 52em) {
+        main .intro h1 {
+          font-size: 2.3em; } }
+    main .intro p {
+      font-size: 1.25em;
+      font-weight: 600;
+      color: #262626;
+      line-height: 1.3;
+      width: 100%; }
+      @media all and (min-width: 40em) {
+        main .intro p {
+          width: 80%;
+          margin: 0 10% 1.6em 10%; } }
+      @media all and (min-width: 52em) {
+        main .intro p {
+          font-size: 1.75em; } }
+      @media all and (min-width: 74em) {
+        main .intro p {
+          width: 60%;
+          margin: 0 20% 1.2em 20%; } }
+    main .intro ul {
+      width: 100%;
+      margin: 2em 0 0 0;
+      float: left;
+      list-style: none;
+      padding: 0; }
+      @media all and (min-width: 52em) {
+        main .intro ul {
+          width: 82%;
+          margin: 2em 9% 0 9%; } }
+      @media all and (min-width: 64em) {
+        main .intro ul {
+          width: 62%;
+          margin: 2em 19% 0 19%; } }
+      main .intro ul li {
+        width: 49%;
+        float: left;
+        font-size: 1.25em;
+        font-family: Kalam, sans-serif;
+        font-weight: 300; }
+        main .intro ul li:last-child {
+          float: right; }
+        @media all and (min-width: 40em) {
+          main .intro ul li {
+            font-size: 1.8em; } }
+        main .intro ul li a {
+          line-height: 1.1;
+          display: block;
+          width: 100%;
+          color: #262626;
+          text-decoration: none;
+          padding: 0.75em 0 0.5em 0;
+          background: rgba(255, 255, 255, 0.5);
+          -webkit-transition: background 0.3s;
+          -moz-transition: background 0.3s;
+          transition: background 0.3s;
+          min-height: 1.25em;
+          position: relative;
+          z-index: 100; }
+          main .intro ul li a:hover, main .intro ul li a:focus, main .intro ul li a.selected {
+            background: #FFF; }
+          main .intro ul li a.selected {
+            background: #FFF;
+            padding-bottom: 1.5em;
+            margin-bottom: -1em; }
+          @media all and (min-width: 30em) {
+            main .intro ul li a {
+              min-height: 0; } }
+  main .headings {
+    width: 100%;
+    float: left;
+    margin: 0 0 2em 0;
+    text-align: center; }
+    @media all and (min-width: 40em) {
+      main .headings {
+        text-align: left; } }
+    main .headings h1 {
+      padding-bottom: 0.5em; }
+      main .headings h1 span {
+        float: left;
+        width: 100%; }
+        @media all and (min-width: 40em) {
+          main .headings h1 span {
+            width: auto; } }
+      main .headings h1 em {
+        display: inline-block;
+        font-size: 0.5em;
+        margin-top: 1em;
+        color: #FFF;
+        background: #262626;
+        padding: 0.3em 0.5em 0.35em;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        font-style: normal;
+        font-weight: 400; }
+        @media all and (min-width: 40em) {
+          main .headings h1 em {
+            float: right;
+            font-size: 0.6em;
+            margin-top: 0; } }
+    main .headings h2 {
+      color: #999999;
+      font-weight: 400; }
+  main .content {
+    width: 100%;
+    float: left;
+    padding: 1.5em 0; }
+    main .content.border {
+      border-top: 10px solid rgba(3, 132, 132, 0.1); }
+    main .content.grey-bg {
+      background: #EEE; }
+    main .content.no-padding {
+      padding: 0 0 !important; }
+    @media all and (min-width: 52em) {
+      main .content {
+        padding: 2em 0; } }
+    main .content h1 {
+      padding-bottom: 1em; }
+    main .content.split6040 section div {
+      width: 100%;
+      float: left;
+      text-align: center; }
+      @media all and (min-width: 52em) {
+        main .content.split6040 section div {
+          width: 55%; }
+          main .content.split6040 section div:last-child {
+            width: 40%;
+            float: right; }
+            main .content.split6040 section div:last-child img {
+              float: none !important; } }
+      main .content.split6040 section div blockquote {
+        border-top: 1px solid #DDD;
+        padding-top: 1em; }
+    @media all and (min-width: 52em) {
+      main .content.split6040 section.right div {
+        float: right; }
+        main .content.split6040 section.right div:last-child {
+          float: left; } }
+  main .quote {
+    width: 100%;
+    float: left;
+    padding: 2em 0; }
+    main .quote blockquote {
+      font-size: 1.75em;
+      font-weight: 400;
+      color: #262626;
+      line-height: 1.1;
+      width: 80%;
+      margin: 0 10%;
+      color: #333333; }
+      @media all and (min-width: 52em) {
+        main .quote blockquote {
+          font-size: 2.25em; } }
+      @media all and (min-width: 74em) {
+        main .quote blockquote {
+          width: 60%;
+          margin: 0 20%; } }
+      main .quote blockquote span {
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.5em;
+        display: block;
+        margin-top: 0.5em;
+        color: #666666; }
+        @media all and (min-width: 52em) {
+          main .quote blockquote span {
+            font-size: 0.4em; } }
+  main .sketches {
+    width: 100%;
+    float: left; }
+    main .sketches h1 {
+      padding-bottom: 0;
+      font-weight: 700; }
+    main .sketches section {
+      width: 100%;
+      float: left;
+      text-align: center;
+      width: 30%;
+      padding: 1em 0;
+      margin-right: 5%; }
+      main .sketches section:last-child {
+        margin-right: 0; }
+      main .sketches section img {
+        width: 80%;
+        margin: 0.5em 10%;
+        height: auto;
+        float: left; }
+        @media all and (min-width: 30em) {
+          main .sketches section img {
+            width: 100%;
+            margin: 0 0 0.5em 0; } }
+      main .sketches section h2 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1em;
+        line-height: 1.4; }
+        @media all and (min-width: 52em) {
+          main .sketches section h2 {
+            line-height: 1.6; } }
+      main .sketches section p {
+        color: #262626;
+        margin: 0;
+        font-size: 0.85em;
+        line-height: 1.3;
+        font-family: Kalam, sans-serif;
+        font-weight: 300; }
+        @media all and (min-width: 30em) {
+          main .sketches section p {
+            font-size: 1em; } }
+        @media all and (min-width: 52em) {
+          main .sketches section p {
+            font-size: 1.25em; } }
+  main .case-studies-container h1 {
+    padding-bottom: 1em;
+    font-weight: 700; }
+  main .case-studies-container .case-studies {
+    width: 90%;
+    float: left;
+    padding: 0em 5%; }
+    @media all and (min-width: 30em) {
+      main .case-studies-container .case-studies {
+        width: 80%;
+        padding: 0 10% 2em 10%; } }
+    @media all and (min-width: 40em) {
+      main .case-studies-container .case-studies {
+        width: 60%;
+        padding: 0 20% 2em 20%; } }
+    @media all and (min-width: 52em) {
+      main .case-studies-container .case-studies {
+        width: 100%;
+        padding: 0 0 0.75em 0; } }
+    main .case-studies-container .case-studies section {
+      width: 100%;
+      float: left;
+      text-align: center;
+      position: relative;
+      color: #FFF;
+      margin-bottom: 1.5em; }
+      @media all and (min-width: 52em) {
+        main .case-studies-container .case-studies section {
+          width: 32%;
+          margin-right: 2%; }
+          main .case-studies-container .case-studies section:nth-child(3n) {
+            margin-right: 0; } }
+      main .case-studies-container .case-studies section img {
+        width: 100%;
+        height: auto;
+        float: left; }
+      main .case-studies-container .case-studies section p {
+        background: #EEE;
+        position: relative;
+        z-index: 100;
+        float: left;
+        margin: 0;
+        color: #666666;
+        padding: 1em 5%;
+        width: 90%;
+        border-bottom: 1px solid #CCC; }
+        @media all and (min-width: 52em) {
+          main .case-studies-container .case-studies section p {
+            padding: 1em 5% 0;
+            border-bottom: 0; } }
+      main .case-studies-container .case-studies section a {
+        display: block;
+        background: rgba(38, 38, 38, 0.3);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #FFF;
+        text-decoration: none;
+        z-index: 10; }
+        main .case-studies-container .case-studies section a h2 {
+          font-family: Kalam, sans-serif;
+          color: #FFF;
+          font-size: 2.25em;
+          line-height: 1;
+          width: 95%;
+          padding: 0 2.5%; }
+          @media all and (min-width: 52em) {
+            main .case-studies-container .case-studies section a h2 {
+              font-size: 2.25em; } }
+          @media all and (min-width: 64em) {
+            main .case-studies-container .case-studies section a h2 {
+              font-size: 3.25em; } }
+        main .case-studies-container .case-studies section a p {
+          padding: 1em 2.5%;
+          width: 95%;
+          background: none;
+          color: #FFF;
+          border-bottom: 0; }
+  main .logos {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 0.5em 0; }
+    main .logos ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      list-style: none;
+      margin: 0; }
+      @media all and (min-width: 52em) {
+        main .logos ul {
+          flex-wrap: nowrap; } }
+      main .logos ul li {
+        vertical-align: middle;
+        padding-left: 1em; }
+        main .logos ul li img {
+          width: auto;
+          max-height: 60px;
+          margin: 0.5em 0; }
+        main .logos ul li:first-child {
+          padding-left: 0; }
+  main .stats {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 1em 0 0 0;
+    border-box: box-sizing; }
+    @media all and (min-width: 30em) {
+      main .stats {
+        width: 90%;
+        margin: 0 5%; } }
+    @media all and (min-width: 40em) {
+      main .stats {
+        width: 80%;
+        margin: 0 10%; } }
+    @media all and (min-width: 52em) {
+      main .stats {
+        width: 100%;
+        margin: 0 0; } }
+    main .stats blockquote {
+      font-size: 1.75em;
+      float: none;
+      text-align: center;
+      display: inline-block;
+      color: #068585; }
+      @media all and (min-width: 40em) {
+        main .stats blockquote {
+          width: 70%; } }
+      @media all and (min-width: 52em) {
+        main .stats blockquote {
+          width: 60%; } }
+      @media all and (min-width: 64em) {
+        main .stats blockquote {
+          width: 45%; } }
+      main .stats blockquote.icon {
+        padding-left: 4em;
+        text-align: left; }
+        main .stats blockquote.icon.coins {
+          background: url(../images/sketches/sm-coins.svg) no-repeat 0 0;
+          -webkit-background-size: auto 80px !important;
+          -moz-background-size: auto 80px !important;
+          -o-background-size: auto 80px !important;
+          background-size: auto 80px !important;
+          min-height: 80px; }
+        main .stats blockquote.icon.graph {
+          background: url(../images/sketches/sm-graph.svg) no-repeat 0.5em 0;
+          -webkit-background-size: auto 60px !important;
+          -moz-background-size: auto 60px !important;
+          -o-background-size: auto 60px !important;
+          background-size: auto 60px !important;
+          min-height: 60px; }
+        main .stats blockquote.icon.heart {
+          background: url(../images/sketches/sm-heart.svg) no-repeat 1em 0;
+          -webkit-background-size: auto 60px !important;
+          -moz-background-size: auto 60px !important;
+          -o-background-size: auto 60px !important;
+          background-size: auto 60px !important;
+          min-height: 60px; }
+        main .stats blockquote.icon.person {
+          background: url(../images/sketches/sm-person.svg) no-repeat 0.5em 0;
+          -webkit-background-size: auto 80px !important;
+          -moz-background-size: auto 80px !important;
+          -o-background-size: auto 80px !important;
+          background-size: auto 80px !important;
+          min-height: 80px; }
+      main .stats blockquote.border-top {
+        border-top: 1px solid #DDD;
+        padding-top: 1em; }
+        main .stats blockquote.border-top.icon.coins {
+          background-position: 0 1em; }
+        main .stats blockquote.border-top.icon.graph {
+          background-position: 0.5em 1.25em; }
+        main .stats blockquote.border-top.icon.heart {
+          background-position: 1em 1.1em; }
+        main .stats blockquote.border-top.icon.person {
+          background-position: 0.5em 1em; }
+      main .stats blockquote.border-bottom {
+        border-bottom: 1px solid #DDD;
+        padding-bottom: 1em;
+        margin-bottom: 1em; }
+    main .stats.no-padding {
+      padding-top: 0; }
+      main .stats.no-padding blockquote {
+        border-top: 0 !important;
+        padding-top: 0; }
+  main .copy .stats, main aside .stats {
+    width: 100%;
+    float: left;
+    margin: 0 0;
+    text-align: left; }
+    main .copy .stats blockquote, main aside .stats blockquote {
+      font-size: 1.5em !important;
+      width: auto;
+      text-align: left; }
+      main .copy .stats blockquote.icon, main aside .stats blockquote.icon {
+        color: #068585 !important; }
+        main .copy .stats blockquote.icon.coins, main aside .stats blockquote.icon.coins {
+          -webkit-background-size: auto 60px !important;
+          -moz-background-size: auto 60px !important;
+          -o-background-size: auto 60px !important;
+          background-size: auto 60px !important;
+          min-height: 60px; }
+        main .copy .stats blockquote.icon.graph, main aside .stats blockquote.icon.graph {
+          background: url(../images/sketches/sm-graph.svg) no-repeat 0.5em 0.5em;
+          -webkit-background-size: auto 40px !important;
+          -moz-background-size: auto 40px !important;
+          -o-background-size: auto 40px !important;
+          background-size: auto 40px !important;
+          min-height: 40px; }
+        main .copy .stats blockquote.icon.heart, main aside .stats blockquote.icon.heart {
+          background: url(../images/sketches/sm-heart.svg) no-repeat 1em 0;
+          -webkit-background-size: auto 40px !important;
+          -moz-background-size: auto 40px !important;
+          -o-background-size: auto 40px !important;
+          background-size: auto 40px !important;
+          min-height: 40px; }
+        main .copy .stats blockquote.icon.person, main aside .stats blockquote.icon.person {
+          background: url(../images/sketches/sm-person.svg) no-repeat 0.5em 0;
+          -webkit-background-size: auto 60px !important;
+          -moz-background-size: auto 60px !important;
+          -o-background-size: auto 60px !important;
+          background-size: auto 60px !important;
+          min-height: 60px; }
+  main aside .stats blockquote {
+    margin-bottom: 0 !important;
+    border-bottom: 0 !important;
+    padding-bottom: 1em !important; }
+    main aside .stats blockquote.border-bottom {
+      border-bottom: 1px solid #DDD !important;
+      margin-bottom: 1em !important; }
+  main .grey-dk .stats blockquote {
+    border-top: 1px solid #CCC; }
+  main article {
+    width: 100%;
+    float: left;
+    padding-top: 1em; }
+    @media all and (min-width: 30em) {
+      main article {
+        width: 90%;
+        margin: 0 5%; } }
+    @media all and (min-width: 40em) {
+      main article {
+        width: 80%;
+        margin: 0 10%; } }
+    @media all and (min-width: 52em) {
+      main article {
+        width: 100%;
+        margin: 0 0; } }
+    main article .copy {
+      width: 100%;
+      float: left; }
+      @media all and (min-width: 52em) {
+        main article .copy {
+          width: 40%; } }
+      main article .copy h2 {
+        font-size: 1.3em;
+        margin-bottom: 1em;
+        font-weight: 700; }
+      main article .copy p {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        color: #262626; }
+      main article .copy ul, main article .copy ol {
+        font-size: 1.1em;
+        margin-bottom: 1.5em;
+        color: #262626; }
+        main article .copy ul ul, main article .copy ul ol, main article .copy ol ul, main article .copy ol ol {
+          margin-bottom: 0.5em; }
+    main article aside {
+      width: 100%;
+      float: right;
+      margin-top: 1em; }
+      @media all and (min-width: 52em) {
+        main article aside {
+          width: 50%;
+          margin-top: 0; } }
+      main article aside section {
+        width: 100%;
+        float: left;
+        margin-bottom: 0.5em; }
+        @media all and (min-width: 30em) {
+          main article aside section {
+            width: 45%;
+            margin: 0 2.5%; }
+            main article aside section.double {
+              width: 95%; } }
+        main article aside section h3, main article aside section p {
+          width: 100%;
+          float: left; }
+      main article aside h1, main article aside h3 {
+        margin: 0.5em 0 1em 0;
+        font-weight: 700;
+        font-size: 1em;
+        padding: 0 0 0 0 !important; }
+      main article aside ul {
+        list-style: none;
+        margin: 0 0 1em 0;
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid #DDD; }
+        main article aside ul li {
+          padding: 1em 0;
+          border-top: 1px solid #DDD;
+          font-size: 0.85em; }
+          main article aside ul li:first-child {
+            padding-top: 0;
+            border-top: 0; }
+      main article aside p {
+        font-size: 0.85em; }
+      main article aside img {
+        float: left;
+        clear: both;
+        width: 100%; }
+        main article aside img.icon {
+          max-height: 50px;
+          max-width: 60px;
+          width: auto; }
+    main article footer {
+      background: none;
+      float: left; }
+      @media all and (min-width: 30em) {
+        main article footer {
+          margin: 1em 2.5% 0;
+          width: 95%; } }
+      @media all and (min-width: 52em) {
+        main article footer {
+          width: 40%;
+          margin: 1em 0 0 0; } }
+      main article footer p {
+        width: 100%;
+        margin-bottom: 0.5em; }
+    main article.center {
+      text-align: center; }
+      @media all and (min-width: 52em) {
+        main article.center {
+          width: 80%;
+          margin: 0 10%; } }
+      @media all and (min-width: 64em) {
+        main article.center {
+          width: 60%;
+          margin: 0 20%; } }
+      main article.center ul {
+        list-style: none;
+        margin: 0 0 1em 0; }
+        main article.center ul ul li {
+          padding-left: 1em;
+          font-size: 0.85em; }
+    main article.page404 ul {
+      list-style: none;
+      margin: 0 0 1em 0; }
+      main article.page404 ul ul li {
+        padding-left: 1em;
+        font-size: 0.85em; }
+    main article.case-study .copy, main article.blog .copy {
+      width: 100%;
+      float: left; }
+      @media all and (min-width: 52em) {
+        main article.case-study .copy, main article.blog .copy {
+          width: 60%; } }
+      main article.case-study .copy h2, main article.blog .copy h2 {
+        font-size: 1.8em; }
+      main article.case-study .copy h3, main article.blog .copy h3 {
+        font-size: 1.3em;
+        margin-bottom: 1em;
+        font-weight: 700; }
+    main article.case-study aside, main article.blog aside {
+      width: 100%;
+      float: right;
+      margin-top: 1em; }
+      @media all and (min-width: 52em) {
+        main article.case-study aside, main article.blog aside {
+          width: 30%;
+          margin-top: 0; } }
+      main article.case-study aside blockquote, main article.blog aside blockquote {
+        font-size: 1.75em;
+        color: #262626;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #CCC;
+        margin-bottom: 1em; }
+        main article.case-study aside blockquote span, main article.blog aside blockquote span {
+          font-size: 0.5em; }
+      main article.case-study aside section, main article.blog aside section {
+        width: 100%;
+        float: left;
+        margin-bottom: 0.5em; }
+    main article.case-study nav, main article.blog nav {
+      width: 100%;
+      float: right;
+      margin-top: 1em; }
+      @media all and (min-width: 52em) {
+        main article.case-study nav, main article.blog nav {
+          width: 30%;
+          margin-top: 0; } }
+      main article.case-study nav h3, main article.blog nav h3 {
+        margin: 0 0 1em 0;
+        font-weight: 700; }
+      main article.case-study nav ul, main article.blog nav ul {
+        width: 100%;
+        float: left; }
+        main article.case-study nav ul li, main article.blog nav ul li {
+          padding: 1em 0;
+          border-top: 1px solid #DDD;
+          font-size: 0.85em; }
+          main article.case-study nav ul li:first-child, main article.blog nav ul li:first-child {
+            padding-top: 0;
+            border-top: 0; }
+    main article.blog .copy {
+      min-height: 20em; }
+      main article.blog .copy section {
+        padding-bottom: 0.5em; }
+      main article.blog .copy h2 {
+        font-family: Kalam, sans-serif;
+        font-weight: 600;
+        margin-bottom: 0.25em;
+        font-size: 1.5em; }
+        @media all and (min-width: 52em) {
+          main article.blog .copy h2 {
+            font-size: 2em; } }
+        main article.blog .copy h2 a {
+          text-decoration: none; }
+  main .article-intro .copy {
+    width: 100%;
+    float: left; }
+    @media all and (min-width: 52em) {
+      main .article-intro .copy {
+        width: 50%; } }
+    main .article-intro .copy h2 {
+      font-family: Kalam, sans-serif;
+      font-size: 2.5em;
+      margin-bottom: 0.5em; }
+    main .article-intro .copy p {
+      font-size: 1.1em;
+      margin-bottom: 1em;
+      color: #262626; }
+  main .article-intro img {
+    width: 100%;
+    float: right;
+    margin-top: 1em; }
+    main .article-intro img.logo {
+      width: auto;
+      height: auto;
+      max-width: 10%;
+      float: left;
+      margin-right: 5%;
+      margin-bottom: 1.5em; }
+    @media all and (min-width: 52em) {
+      main .article-intro img {
+        width: 30%;
+        margin-top: 0; } }
+
+form {
+  width: 100%;
+  float: left;
+  border-top: 1px solid #CCC;
+  padding: 2em 0; }
+  form fieldset {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #CCC;
+    padding: 2em 0; }
+    form fieldset:first-child {
+      border-top: 0;
+      padding: 0 0 2em 0; }
+    form fieldset.center {
+      text-align: center; }
+      form fieldset.center input {
+        float: none; }
+  form legend, form h2 {
+    font-size: 1.5em;
+    color: #262626;
+    font-weight: 700;
+    width: 100%;
+    padding-bottom: 1.5em; }
+    @media all and (min-width: 40em) {
+      form legend, form h2 {
+        font-size: 1.75em; } }
+  form .checkbox {
+    width: 100%;
+    float: left; }
+    form .checkbox label {
+      width: 90%; }
+  form .manual-address {
+    width: 100%;
+    float: left;
+    display: none; }
+  form p.hidden-info {
+    color: #999999;
+    width: 100%;
+    float: left;
+    display: none; }
+  form a.show-help {
+    display: inline-block;
+    background: #DDD;
+    color: #999999;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    font-size: 1.75em;
+    text-decoration: none;
+    margin-left: 0.5em;
+    margin-bottom: 0; }
+  form.donate {
+    text-align: center; }
+    form.donate label {
+      width: auto;
+      float: none; }
+    form.donate input {
+      float: none; }
+      form.donate input[type=submit] {
+        margin: 0; }
+    form.donate p {
+      padding: 1em 0; }
+    form.donate .fancyform div {
+      width: 45%;
+      margin: 0; }
+      @media all and (min-width: 40em) {
+        form.donate .fancyform div {
+          width: auto;
+          margin: 0 1em; } }
+      form.donate .fancyform div.amount-container {
+        width: 100%;
+        float: left; }
+        form.donate .fancyform div.amount-container div {
+          margin-bottom: 1em; }
+          @media all and (min-width: 64em) {
+            form.donate .fancyform div.amount-container div {
+              margin-bottom: 0; } }
+        form.donate .fancyform div.amount-container em {
+          width: 2em;
+          text-align: left; }
+      form.donate .fancyform div.giftaid-container {
+        width: 100%; }
+        form.donate .fancyform div.giftaid-container em {
+          width: 40%;
+          font-size: 1em;
+          font-weight: 600;
+          padding: 0 0 0 0.5em;
+          line-height: 1.2;
+          text-align: left; }
+          @media all and (min-width: 40em) {
+            form.donate .fancyform div.giftaid-container em {
+              font-size: 1.75em;
+              font-weight: 400;
+              width: auto;
+              text-align: center;
+              padding-bottom: 0.25em; } }
+    form.donate .fancyform .other {
+      width: 70%;
+      margin: 1em 15%; }
+      @media all and (min-width: 40em) {
+        form.donate .fancyform .other {
+          width: 50%;
+          margin: 2em 25%; } }
+      @media all and (min-width: 64em) {
+        form.donate .fancyform .other {
+          width: 25%;
+          margin: 0 0 0 1em; } }
+      form.donate .fancyform .other label {
+        width: 35%;
+        font-size: 1.5em;
+        padding: 0 5% 0 0;
+        color: #262626;
+        text-align: right; }
+        @media all and (min-width: 40em) {
+          form.donate .fancyform .other label {
+            font-size: 1.75em; } }
+      form.donate .fancyform .other input[type=text] {
+        width: 50%;
+        margin-bottom: 0;
+        font-size: 1.5em;
+        padding: 0.1em 2.5% 0.3em 2.5%; }
+        @media all and (min-width: 40em) {
+          form.donate .fancyform .other input[type=text] {
+            font-size: 1.75em; } }
+  form.login {
+    border: 0;
+    padding-top: 1em;
+    padding-bottom: 0;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%; }
+    @media all and (min-width: 52em) {
+      form.login {
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%; } }
+    @media all and (min-width: 64em) {
+      form.login {
+        width: 40%;
+        padding-left: 30%;
+        padding-right: 30%; } }
+    form.login fieldset {
+      float: left;
+      width: 100%; }
+      form.login fieldset input[type=text], form.login fieldset input[type=password] {
+        border: 2px solid #EEE; }
+    form.login a.small {
+      float: right; }
+    form.login a.button {
+      padding-left: 1em;
+      padding-right: 1em; }
+  form.giftaid {
+    width: 100%; }
+    @media all and (min-width: 52em) {
+      form.giftaid {
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%; } }
+    form.giftaid fieldset {
+      padding-bottom: 1.25em; }
+      form.giftaid fieldset.center a {
+        display: block;
+        margin: 1em 0; }
+    form.giftaid legend {
+      text-align: center; }
+      form.giftaid legend svg {
+        fill: #262626;
+        width: 50%;
+        padding-bottom: 20%; }
+        @media all and (min-width: 40em) {
+          form.giftaid legend svg {
+            width: 30%;
+            padding-bottom: 10%; } }
+    form.giftaid h2 {
+      text-transform: uppercase;
+      font-size: 1em;
+      text-align: center; }
+    form.giftaid a[class^="show"] {
+      margin: -0.25em 0 1.5em 0;
+      float: left;
+      display: inline-block; }
+    form.giftaid div {
+      margin: 0;
+      width: 100%; }
+      form.giftaid div.checkbox {
+        margin-bottom: 1em; }
+      form.giftaid div.postcode {
+        float: left; }
+        form.giftaid div.postcode input {
+          width: 53%; }
+          @media all and (min-width: 40em) {
+            form.giftaid div.postcode input {
+              width: 60%; } }
+          @media all and (min-width: 52em) {
+            form.giftaid div.postcode input {
+              width: 70%; } }
+        form.giftaid div.postcode a.button {
+          padding-left: 0;
+          padding-right: 0;
+          width: 40%;
+          float: right;
+          font-size: 0.85em;
+          font-weight: 600;
+          margin: 0.4em 0; }
+          @media all and (min-width: 40em) {
+            form.giftaid div.postcode a.button {
+              width: 35%; } }
+          @media all and (min-width: 52em) {
+            form.giftaid div.postcode a.button {
+              width: 25%; } }
+    form.giftaid input[type=checkbox]:not(old) + label > span {
+      float: left;
+      margin-right: 0.5em; }
+    form.giftaid input[type=checkbox]:not(old) + label em {
+      width: 76%;
+      float: left;
+      margin-top: -0.25em;
+      font-size: 1em; }
+      @media all and (min-width: 40em) {
+        form.giftaid input[type=checkbox]:not(old) + label em {
+          width: 86%;
+          font-size: 1.25em; } }
+
+.account a.button {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 10% 1em 10%;
+  width: 80%; }
+  @media all and (min-width: 30em) {
+    .account a.button {
+      margin: 0 20% 1em 20%;
+      width: 60%; } }
+  @media all and (min-width: 40em) {
+    .account a.button {
+      margin: 0 25% 1em 25%;
+      width: 50%; } }
+  @media all and (min-width: 52em) {
+    .account a.button {
+      margin: 0 30% 1em 30%;
+      width: 40%; } }
+  @media all and (min-width: 64em) {
+    .account a.button {
+      margin: 0 35% 1em 35%;
+      width: 30%; } }
+
+.help-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  display: none;
+  text-align: center; }
+  .help-container .help {
+    background: #FFF;
+    position: fixed;
+    height: 70vh;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    width: 80%;
+    padding: 5%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.2); }
+    @media all and (min-width: 40em) {
+      .help-container .help {
+        background: #FFF;
+        position: fixed;
+        height: 50vh;
+        margin-top: 25vh;
+        margin-left: 25vw;
+        width: 40%;
+        padding: 2.5% 5% 0 5%;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        -moz-box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.2); } }
+    .help-container .help h2 {
+      padding-bottom: 0.5em;
+      font-weight: 600;
+      font-size: 1.25em; }
+    .help-container .help p.large {
+      font-size: 1.75em;
+      color: #262626;
+      font-weight: 700;
+      margin: 0;
+      padding: 0 0 1em 0; }
+    .help-container .help a.button {
+      font-weight: 700; }
+    .help-container .help a.small {
+      display: block;
+      margin: 2em 0; }
+
+footer {
+  width: 100%;
+  float: left;
+  background: #262626; }
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em 0;
+    float: left; }
+    footer ul li {
+      padding: 0 1em 0 0;
+      margin: 0;
+      display: inline-block; }
+      @media all and (min-width: 52em) {
+        footer ul li {
+          padding: 0 2em 0 0; } }
+      footer ul li a {
+        color: #999999 !important;
+        font-size: 0.65em; }
+        footer ul li a:hover {
+          color: #FFF !important; }
+        @media all and (min-width: 52em) {
+          footer ul li a {
+            font-size: 0.75em; } }
+  footer p {
+    font-size: 0.65em;
+    width: 100%;
+    float: left;
+    margin-bottom: 2em; }
+    @media all and (min-width: 52em) {
+      footer p {
+        width: 70%;
+        font-size: 0.75em; } }
+  footer img {
+    max-height: 40px;
+    width: auto;
+    float: left;
+    margin: 0.75em 0 1.5em 0;
+    clear: both; }
+    @media all and (min-width: 52em) {
+      footer img {
+        float: right;
+        margin: 1.5em 0 0 0;
+        clear: none;
+        max-height: 60px; } }
+  footer .links {
+    background: #333333;
+    width: 100%;
+    float: left;
+    padding: 1em 0 0.25em 0; }
+    @media all and (min-width: 52em) {
+      footer .links {
+        padding: 2em 0 1.25em 0; } }
+    footer .links section {
+      width: 80%;
+      float: left; }
+      footer .links section:last-child {
+        margin-top: 1em; }
+      @media all and (min-width: 52em) {
+        footer .links section {
+          width: 38%;
+          margin-right: 2%; }
+          footer .links section:last-child {
+            margin-top: 0; } }
+      footer .links section h2 {
+        color: #FFF;
+        margin-bottom: 1em; }
+        footer .links section h2 a {
+          color: #14bbba;
+          text-decoration: none;
+          font-size: 1em;
+          font-weight: 700; }
+          footer .links section h2 a:hover, footer .links section h2 a:focus {
+            color: #068585; }
+      footer .links section p {
+        font-size: 0.75em;
+        color: #EEE;
+        margin-bottom: 1em;
+        width: 90%; }
+        @media all and (min-width: 52em) {
+          footer .links section p {
+            font-size: 0.85em; } }
+      footer .links section a {
+        color: #14bbba;
+        display: inline-block;
+        line-height: 1; }
+        footer .links section a:hover, footer .links section a:focus {
+          color: #068585; }
+    footer .links ul {
+      float: right;
+      width: 20%;
+      text-align: right;
+      padding: 0 0 1.5em 0; }
+      footer .links ul li {
+        padding: 0 0 0 0.5em; }
+        footer .links ul li img {
+          margin: 0 0 0 0; }
+
+.footer-logos {
+  width: 100%;
+  float: left;
+  text-align: center; }
+  .footer-logos img {
+    width: auto;
+    height: auto;
+    max-width: 80px;
+    max-height: 80px;
+    display: inline-block;
+    margin: 1em; }
