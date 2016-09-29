@@ -777,6 +777,8 @@ body {
             -moz-background-size: 40px 40px !important;
             -o-background-size: 40px 40px !important;
             background-size: 40px 40px !important; } }
+.nfs-only .search-results h1 span {
+  font-weight: normal; }
 .nfs-only main {
   background: #FFF;
   color: #666666;
@@ -1170,7 +1172,7 @@ body {
         width: 100%;
         height: auto;
         float: left; }
-        .nfs-only main .campaign-list section img.funded, .nfs-only main .campaign-list section img.event, .nfs-only main .campaign-list section img.product {
+        .nfs-only main .campaign-list section img.funded, .nfs-only main .campaign-list section img.event, .nfs-only main .campaign-list section img.ticket, .nfs-only main .campaign-list section img.campaign {
           width: 25%;
           height: auto;
           position: absolute;
