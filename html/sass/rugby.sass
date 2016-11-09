@@ -1,0 +1,292 @@
+// colours
+$black: #262626
+$white: #FFF
+$grey-light: #f2f2f2
+$grey: #DDD
+$grey-mid: #CCC
+$grey-dark: #333333
+
+$turq: #004f87 // TRBN light blue
+$turq-dark: #1c3160 // TRBN dark blue
+$red: #0d69a8 // light blue
+$red-dark: #1c3160 // dark blue
+$yellow: #0d69a8
+$yellow-dark: #1c3160
+$green: #57b764
+$green-dark: #39a447
+$orange: #F90
+$orange-dark: #f19201
+
+// text colours
+$text: #222222
+$text-light: #8e8e8e
+
+// link colours
+$link: #1c3160
+$hover: #004f87
+
+// fonts and margin
+$font: 'Open Sans', sans-serif
+$headfont: 'Lato', sans-serif
+$hw-font: Kalam, sans-serif
+$base-fs: 1em
+$base-margin: 1em
+
+$xwidescreen: "all and (min-width:77em)"
+$widescreen: "all and (min-width:74em)"
+$desktop: "all and (min-width:64em)"
+$tablet: "all and (min-width:52em)"
+$small-tablet: "all and (min-width:40em)"
+$mobile: "all and (min-width:32em)"
+
+body
+	background: $turq
+	font-family: $font
+	font-weight: 300
+	font-size: $base-fs
+
+.nfs-only
+
+	h1
+		font-family: $headfont
+		font-weight: 400
+		color: $turq
+
+		em 
+			background: $grey !important
+			font-weight: 300 !important
+			color: $turq !important
+
+	h2, h3
+		font-weight: 300 !important
+
+	p, li 
+		color: $text
+
+	a
+		&:link, &:visited, &:active
+			color: $link
+		&:hover, &:focus
+			color: $hover
+
+		&.button
+			background: $red
+			color: $white
+			border: 0
+			font-family: $headfont
+			&:hover, &:focus, &:active
+				background: $red-dark
+			&.turq
+				background: $turq
+				&:hover, &:focus, &:active
+					background: $turq-dark
+			&.yellow
+				background: $yellow
+				&:hover, &:focus, &:active
+					background: $yellow-dark
+			&.secondary
+				color: $text
+				background: $grey
+				&:hover, &:focus, &:active
+					background: $grey-mid
+
+	input,
+	textarea 
+		font-weight: 300
+		&[type=text], &[type=password], textarea
+			&:focus
+				border: 2px solid $turq
+				color: $turq-dark
+
+	.fancyform
+
+		input[type=checkbox]:not(old):checked + label > span,
+		input[type=radio]:not(old):checked + label > span
+			border: 2px solid $turq
+
+	input[type=button],
+	input[type=submit],
+	button
+		background: $red
+		color: $white
+		&:hover, &:focus
+			background: $red-dark
+		&.turq
+			background: $turq
+			&:hover, &:focus
+				background: $turq-dark
+
+	select 
+		font-weight: 300
+		&:focus
+			border: 2px solid $turq
+			color: $turq-dark
+
+	.message
+		&.turq-bg
+			background: $turq
+			color: $white
+
+	.search-bar
+		background: $turq-dark
+
+		form
+
+			label
+				font-family: $hw-font
+				color: $white
+
+			input
+				&[type=submit]
+					background: url(../images/search-icon-plain.svg) no-repeat center center
+				@media #{$small-tablet}
+					&[type=submit]
+						background: url(../images/search-icon-plain.svg) no-repeat center center
+				@media #{$tablet}
+					&[type=submit]
+						background: url(../images/search-icon-plain.svg) no-repeat center center
+
+	header
+
+		@media #{$small-tablet}
+	
+			a
+				&.logo
+					width: 18.75em
+					height: 3.4em
+					float: left
+
+	main
+
+		.intro-bar
+			background: $turq
+
+		.highlight-bar
+
+			@media #{$small-tablet}
+				background: $grey-light
+
+		.campaign-list
+
+			section
+
+				span
+					&.code 
+						background: $grey !important
+						font-weight: 300 !important
+						color: $text !important
+
+				.copy
+					a
+						color: $turq-dark
+						&:hover, &:focus
+							color: $turq
+
+					h2
+						a
+							&:hover, &:focus
+								color: $turq
+
+					h3
+						a
+							&:hover, &:focus
+								color: $turq
+
+		.pager
+
+			a
+				background: rgba(255,255,255,.5)
+				&:hover, &:focus
+					background: $red
+				&.cycle-pager-active
+					background: $red
+
+		.quote-pager
+
+			a
+				background: rgba(54,169,255,.3)
+				&:hover, &:focus
+					background: $red
+				&.cycle-pager-active
+					background: $red
+
+		.donate
+
+			.copy
+
+				a
+					color: $link
+					&:hover, &:focus
+						color: $hover
+					&.button
+						color: $white
+						&:hover, &:focus
+							color: $white
+						&.secondary
+							color: $text
+
+		article
+
+			footer
+
+				.copy
+
+					a
+						color: $link !important
+						&:hover, &:focus
+							color: $hover !important
+
+	footer 
+
+		p
+			color: $white
+
+		a
+			color: $white !important
+			&:hover
+				color: $white !important
+
+		.links
+			background: $turq-dark
+
+			p
+				color: $white
+				&:first-child
+
+					a
+						color: $white !important
+						&:hover, &:focus
+							color: $white !important
+
+
+.display-screens
+	
+	header
+		padding: 2vh 0
+		
+		img
+			height: 5vh
+			width: auto
+			@media #{$small-tablet}
+				height: 8vh
+				width: auto
+				margin: 0 $base-margin*2
+
+	.amount-raised
+		background: $turq-dark !important
+
+		h1
+			font-size: 20vw
+			@media #{$small-tablet}
+				font-size: 24vh
+
+	footer	
+
+		p
+			color: $white
+
+			a
+				color: $white !important
+				&:hover
+					color: $white !important
+

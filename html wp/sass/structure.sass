@@ -58,6 +58,11 @@ a
 		color: $link
 	&:hover, &:focus
 		color: $hover
+	&.red
+		color: $red
+		&:hover, &:focus
+			color: $black
+
 
 	&.button
 		display: inline-block
@@ -119,7 +124,7 @@ img
 		margin-left: 2em
 		max-width: 40%
 	
-label 
+label, .label 
 	width: 100%
 	float: left
 	padding-bottom: $base-margin*.5
@@ -253,6 +258,7 @@ button
 		background: $turq
 		&:hover, &:focus
 			background: $turq-dark
+			color: $white
 	
 	em
 		font-style: normal

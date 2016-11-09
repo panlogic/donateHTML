@@ -14,6 +14,18 @@ jQuery(document).ready(function() {
 		return false;
 	});
 
+	// FAQs
+	$('.faqs h3').click(function () {
+		if ($(this).hasClass('open')) {
+			$(this).removeClass('open');
+			$(this).next('div').slideUp();
+		} else {
+			$(this).addClass('open');
+			$(this).next('div').slideDown();
+		}
+		return false;
+	});
+
 	function check_difference(a, b) { return Math.abs(a - b); } 
 	
 	function check_window_size() {

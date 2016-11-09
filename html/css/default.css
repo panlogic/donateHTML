@@ -1388,6 +1388,10 @@ body {
           width: 55%;
           float: left;
           margin-top: -5px; } }
+      .nfs-only main .donate .copy ul {
+        list-style: disc; }
+        .nfs-only main .donate .copy ul li {
+          margin-left: 1.5em; }
       .nfs-only main .donate .copy .fade {
         /* Safari 5.1, Chrome 10+ */
         background: -webkit-linear-gradient(top, transparent, #EEE);

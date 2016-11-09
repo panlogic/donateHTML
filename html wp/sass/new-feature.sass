@@ -1,0 +1,52 @@
+.new-feature
+	width: 100%
+	float: left
+
+	@media #{$tablet}
+		width: 80%
+		padding-left: 10%
+
+	@media #{$desktop}
+		width: 70%
+		padding-left: 15%
+
+	img
+		width: 40%
+		margin: $base-margin*.5 0
+		height: auto
+		float: left
+
+	div
+		&.copy
+			width: 55%
+			padding-right: 5%
+			float: right
+
+			@media #{$mobile}
+				padding-top: $base-margin*1.5
+			@media #{$small-tablet}
+				font-size: $base-fs*1.25
+				padding-top: $base-margin*.5
+			@media #{$tablet}
+				padding-top: $base-margin*2
+				font-size: $base-fs*1
+			@media #{$desktop}
+				padding-top: $base-margin*2.5
+
+			h1
+				padding-bottom: $base-margin*.5
+				font-weight: 700
+
+			p
+				color: $black
+				margin: 0
+				font-size: $base-fs*.85
+				line-height: 1.3
+				font-family: $hw-font
+				font-weight: 300
+
+				@media #{$mobile}
+					font-size: $base-fs
+				@media #{$tablet}
+					font-size: $base-fs*1.25
+

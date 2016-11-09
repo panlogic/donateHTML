@@ -12,8 +12,7 @@
 
 <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="js/svg4everybody.js" type="text/javascript"></script>
-<script src="js/jquery.cycle2.js" type="text/javascript"></script>
-<script src="js/jquery.cycle2.swipe.min.js" type="text/javascript"></script>
+<script src="js/jquery.cycle2.min.js" type="text/javascript"></script>
 <script src="js/jquery.hoverIntent.min.js" type="text/javascript"></script>
 <script src="js/general.js" type="text/javascript"></script>
 
@@ -30,9 +29,10 @@
 			<ul>
 				<li><a href="#">How it works</a></li>
 				<li><a href="#">Services &amp; costs</a></li>
+				<li><a href="#" class="red">Text raffle</a></li>
 				<li><a href="#">Case studies</a></li>
-				<li><a href="#">About DONATE</a></li>
-				<li><a href="#">News &amp; Blog</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">News</a></li>
 				<li class="mobile"><a href="#">FAQs</a></li>
 				<li><a href="#" class="button yellow">Login</a> <a href="#" class="button">Sign up</a></li>
 			</ul>
@@ -47,25 +47,49 @@
 	</div>
 	<div class="highlight-bar grey-lt border">
 		<div class="inner center">
-			<div class="sketches">
-				<h1>How it works</h1>
-				<section>
-					<img src="images/sketches/computer.svg" alt="" />
-					<h2>Step 1</h2>
-					<p>register with DONATE</p>
-				</section>
-				<section>
-					<img src="images/sketches/target.svg" alt="" />
-					<h2>Step 2</h2>
-					<p>identify your fundraising campaign</p>
-				</section>
-				<section>
-					<img src="images/sketches/poster.svg" alt="" />
-					<h2>Step 3</h2>
-					<p>promote ways for donors to give</p>
-				</section>
+	    <div class="controls">
+		    <div class="cycle-prev"><img src="images/arrow-left.svg" alt="" /></div>
+    		<div class="cycle-next"><img src="images/arrow-right.svg" alt="" /></div>
+	    </div>
+			<div class="cycle-slideshow" 
+		    data-cycle-fx="scrollHorz" 
+		    data-cycle-timeout="0"
+		    data-cycle-slides="> div.slide"
+        data-cycle-prev=".cycle-prev"
+        data-cycle-next=".cycle-next"
+		    >
+				<div class="slide">
+					<div class="sketches">
+						<h1>How it works</h1>
+						<section>
+							<img src="images/sketches/computer.svg" alt="" />
+							<h2>Step 1</h2>
+							<p>register with DONATE</p>
+						</section>
+						<section>
+							<img src="images/sketches/target.svg" alt="" />
+							<h2>Step 2</h2>
+							<p>identify your fundraising campaign</p>
+						</section>
+						<section>
+							<img src="images/sketches/poster.svg" alt="" />
+							<h2>Step 3</h2>
+							<p>promote ways for donors to give</p>
+						</section>
+					</div>
+					<a href="#" class="button margin-top">Sign up</a>
+				</div>
+				<div class="slide">
+					<section class="new-feature">
+						<img src="images/sketches/text.svg" alt="" />
+						<div class="copy">
+							<h1>Text Raffle</h1>
+							<p>Text raffles enable your supporters to enter into a raffle using their mobile phone. Mobile phone numbers act as the entry tickets with the winning number being called and/or texted by you.</p>
+						</div>
+					</section>
+					<a href="#" class="button margin-top-extra">Find out more</a>
+				</div>
 			</div>
-			<a href="#" class="button margin-top">Sign up</a>
 		</div>
 	</div>
 	<div class="content">
@@ -83,9 +107,6 @@
 			</div>
 			<div class="stats">
 				<blockquote class="border-top icon coins">Organisations raise <strong>14 times</strong> their average cash donation</blockquote><br clear="all" />
-				<blockquote class="border-top icon person">Organisations raise <strong>14 times</strong> their average cash donation</blockquote><br clear="all" />
-				<blockquote class="border-top icon heart">Organisations raise <strong>14 times</strong> their average cash donation</blockquote><br clear="all" />
-				<blockquote class="border-top icon graph">Organisations raise <strong>14 times</strong> their average cash donation</blockquote><br clear="all" />
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,182 @@
+body {
+  background: #004f87;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em; }
+
+.nfs-only h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #004f87; }
+  .nfs-only h1 em {
+    background: #DDD !important;
+    font-weight: 300 !important;
+    color: #004f87 !important; }
+.nfs-only h2, .nfs-only h3 {
+  font-weight: 300 !important; }
+.nfs-only p, .nfs-only li {
+  color: #222222; }
+.nfs-only a:link, .nfs-only a:visited, .nfs-only a:active {
+  color: #1c3160; }
+.nfs-only a:hover, .nfs-only a:focus {
+  color: #004f87; }
+.nfs-only a.button {
+  background: #0d69a8;
+  color: #FFF;
+  border: 0;
+  font-family: "Lato", sans-serif; }
+  .nfs-only a.button:hover, .nfs-only a.button:focus, .nfs-only a.button:active {
+    background: #1c3160; }
+  .nfs-only a.button.turq {
+    background: #004f87; }
+    .nfs-only a.button.turq:hover, .nfs-only a.button.turq:focus, .nfs-only a.button.turq:active {
+      background: #1c3160; }
+  .nfs-only a.button.yellow {
+    background: #0d69a8; }
+    .nfs-only a.button.yellow:hover, .nfs-only a.button.yellow:focus, .nfs-only a.button.yellow:active {
+      background: #1c3160; }
+  .nfs-only a.button.secondary {
+    color: #222222;
+    background: #DDD; }
+    .nfs-only a.button.secondary:hover, .nfs-only a.button.secondary:focus, .nfs-only a.button.secondary:active {
+      background: #CCC; }
+.nfs-only input,
+.nfs-only textarea {
+  font-weight: 300; }
+  .nfs-only input[type=text]:focus, .nfs-only input[type=password]:focus, .nfs-only input textarea:focus,
+  .nfs-only textarea[type=text]:focus,
+  .nfs-only textarea[type=password]:focus,
+  .nfs-only textarea textarea:focus {
+    border: 2px solid #004f87;
+    color: #1c3160; }
+.nfs-only .fancyform input[type=checkbox]:not(old):checked + label > span,
+.nfs-only .fancyform input[type=radio]:not(old):checked + label > span {
+  border: 2px solid #004f87; }
+.nfs-only input[type=button],
+.nfs-only input[type=submit],
+.nfs-only button {
+  background: #0d69a8;
+  color: #FFF; }
+  .nfs-only input[type=button]:hover, .nfs-only input[type=button]:focus,
+  .nfs-only input[type=submit]:hover,
+  .nfs-only input[type=submit]:focus,
+  .nfs-only button:hover,
+  .nfs-only button:focus {
+    background: #1c3160; }
+  .nfs-only input[type=button].turq,
+  .nfs-only input[type=submit].turq,
+  .nfs-only button.turq {
+    background: #004f87; }
+    .nfs-only input[type=button].turq:hover, .nfs-only input[type=button].turq:focus,
+    .nfs-only input[type=submit].turq:hover,
+    .nfs-only input[type=submit].turq:focus,
+    .nfs-only button.turq:hover,
+    .nfs-only button.turq:focus {
+      background: #1c3160; }
+.nfs-only select {
+  font-weight: 300; }
+  .nfs-only select:focus {
+    border: 2px solid #004f87;
+    color: #1c3160; }
+.nfs-only .message.turq-bg {
+  background: #004f87;
+  color: #FFF; }
+.nfs-only .search-bar {
+  background: #1c3160; }
+  .nfs-only .search-bar form label {
+    font-family: Kalam, sans-serif;
+    color: #FFF; }
+  .nfs-only .search-bar form input[type=submit] {
+    background: url(../images/search-icon-plain.svg) no-repeat center center; }
+  @media all and (min-width: 40em) {
+    .nfs-only .search-bar form input[type=submit] {
+      background: url(../images/search-icon-plain.svg) no-repeat center center; } }
+  @media all and (min-width: 52em) {
+    .nfs-only .search-bar form input[type=submit] {
+      background: url(../images/search-icon-plain.svg) no-repeat center center; } }
+@media all and (min-width: 40em) {
+  .nfs-only header a.logo {
+    width: 18.75em;
+    height: 3.4em;
+    float: left; } }
+.nfs-only main .intro-bar {
+  background: #004f87; }
+@media all and (min-width: 40em) {
+  .nfs-only main .highlight-bar {
+    background: #f2f2f2; } }
+.nfs-only main .campaign-list section span.code {
+  background: #DDD !important;
+  font-weight: 300 !important;
+  color: #222222 !important; }
+.nfs-only main .campaign-list section .copy a {
+  color: #1c3160; }
+  .nfs-only main .campaign-list section .copy a:hover, .nfs-only main .campaign-list section .copy a:focus {
+    color: #004f87; }
+.nfs-only main .campaign-list section .copy h2 a:hover, .nfs-only main .campaign-list section .copy h2 a:focus {
+  color: #004f87; }
+.nfs-only main .campaign-list section .copy h3 a:hover, .nfs-only main .campaign-list section .copy h3 a:focus {
+  color: #004f87; }
+.nfs-only main .pager a {
+  background: rgba(255, 255, 255, 0.5); }
+  .nfs-only main .pager a:hover, .nfs-only main .pager a:focus {
+    background: #0d69a8; }
+  .nfs-only main .pager a.cycle-pager-active {
+    background: #0d69a8; }
+.nfs-only main .quote-pager a {
+  background: rgba(54, 169, 255, 0.3); }
+  .nfs-only main .quote-pager a:hover, .nfs-only main .quote-pager a:focus {
+    background: #0d69a8; }
+  .nfs-only main .quote-pager a.cycle-pager-active {
+    background: #0d69a8; }
+.nfs-only main .donate .copy a {
+  color: #1c3160; }
+  .nfs-only main .donate .copy a:hover, .nfs-only main .donate .copy a:focus {
+    color: #004f87; }
+  .nfs-only main .donate .copy a.button {
+    color: #FFF; }
+    .nfs-only main .donate .copy a.button:hover, .nfs-only main .donate .copy a.button:focus {
+      color: #FFF; }
+    .nfs-only main .donate .copy a.button.secondary {
+      color: #222222; }
+.nfs-only main article footer .copy a {
+  color: #1c3160 !important; }
+  .nfs-only main article footer .copy a:hover, .nfs-only main article footer .copy a:focus {
+    color: #004f87 !important; }
+.nfs-only footer p {
+  color: #FFF; }
+.nfs-only footer a {
+  color: #FFF !important; }
+  .nfs-only footer a:hover {
+    color: #FFF !important; }
+.nfs-only footer .links {
+  background: #1c3160; }
+  .nfs-only footer .links p {
+    color: #FFF; }
+    .nfs-only footer .links p:first-child a {
+      color: #FFF !important; }
+      .nfs-only footer .links p:first-child a:hover, .nfs-only footer .links p:first-child a:focus {
+        color: #FFF !important; }
+
+.display-screens header {
+  padding: 2vh 0; }
+  .display-screens header img {
+    height: 5vh;
+    width: auto; }
+    @media all and (min-width: 40em) {
+      .display-screens header img {
+        height: 8vh;
+        width: auto;
+        margin: 0 2em; } }
+.display-screens .amount-raised {
+  background: #1c3160 !important; }
+  .display-screens .amount-raised h1 {
+    font-size: 20vw; }
+    @media all and (min-width: 40em) {
+      .display-screens .amount-raised h1 {
+        font-size: 24vh; } }
+.display-screens footer p {
+  color: #FFF; }
+  .display-screens footer p a {
+    color: #FFF !important; }
+    .display-screens footer p a:hover {
+      color: #FFF !important; }

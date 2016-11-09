@@ -9,6 +9,7 @@ main
 		float: left
 	
 	.highlight-bar
+		position: relative
 		width: 100%
 		float: left
 		padding: $base-margin*2 0
@@ -28,6 +29,61 @@ main
 
 		h1
 			padding-bottom: $base-margin
+
+		.cycle-prev, .cycle-next
+			cursor: pointer
+			display: inline-block
+			position: absolute
+			bottom: $base-margin*2.25
+			left: 5%
+			z-index: 10000
+
+			img
+				width: 17px
+				height: 30px
+
+			@media #{$xwidescreen}
+				top: 50%
+				left: 1.5%
+				margin-top: -30px
+
+				img
+					width: 33px
+					height: 60px
+
+		.cycle-next
+			left: auto
+			right: 5%
+
+			@media #{$xwidescreen}
+				right: 1.5%
+
+		.cycle-slideshow
+			width: 100%
+			float: left
+
+			.cycle-pager
+				position: absolute
+				bottom: $base-margin*.9
+				right: 0
+				z-index: 10000
+
+				span
+					display: inline-block
+					width: 20px
+					height: 20px
+					background: $grey
+					text-indent: -2000em
+					+border-radius(10px)
+					margin-left: 10px
+
+			.slide
+				width: 100%
+				float: left
+
+				a
+					&.margin-top-extra
+						margin-top: $base-margin*1.5
 	
 	.intro
 		padding: $base-margin*2 0 0
@@ -219,6 +275,7 @@ main
 
 
 	@import "sketches"
+	@import "new-feature"
 	@import "case-studies"
 	@import "logos"
 	@import "stats"
