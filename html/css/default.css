@@ -413,6 +413,9 @@ body {
     background: #DDD; }
     .nfs-only a.button.secondary:hover, .nfs-only a.button.secondary:focus, .nfs-only a.button.secondary:active {
       background: #CCC; }
+  .nfs-only a.button.lowfi {
+    font-weight: 600;
+    padding: 0.5em 1.5em; }
 .nfs-only strong {
   font-weight: 700; }
 .nfs-only blockquote {
@@ -1896,6 +1899,40 @@ body {
       width: 70%;
       float: left;
       height: 2em; }
+.nfs-only.nologin .lot .message {
+  position: fixed;
+  top: 62px;
+  left: 5%;
+  width: 85% !important;
+  height: 60% !important;
+  z-index: 2000;
+  padding: 10% 2.5% !important; }
+  @media all and (min-width: 40em) {
+    .nfs-only.nologin .lot .message {
+      left: 50%;
+      margin-left: -40vw;
+      width: 80vw !important;
+      height: 10em !important;
+      padding: 5% 2.5% !important; } }
+  @media all and (min-width: 52em) {
+    .nfs-only.nologin .lot .message {
+      left: 50%;
+      margin-left: -25vw;
+      width: 50vw !important;
+      height: 10em !important; } }
+  .nfs-only.nologin .lot .message h2 {
+    font-size: 1.5em;
+    color: #FFF;
+    font-weight: 300;
+    padding-bottom: 1em; }
+  .nfs-only.nologin .lot .message p {
+    width: 100%; }
+  .nfs-only.nologin .lot .message a.button {
+    background: #FFF;
+    color: #262626;
+    padding: 0.5em 2em;
+    float: none;
+    margin-top: 1.5em; }
 .nfs-only .overlay {
   display: none;
   position: fixed;
