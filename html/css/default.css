@@ -1974,7 +1974,8 @@ body {
       font-size: 1.5em;
       margin: 0.5em 0 1em 0; }
     .nfs-only .overlay .info-box span {
-      display: inline-block; }
+      display: inline-block;
+      cursor: pointer; }
       .nfs-only .overlay .info-box span.button {
         display: inline-block;
         text-align: center;
