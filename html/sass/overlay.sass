@@ -34,9 +34,36 @@
 			font-size: $base-fs*1.5
 			margin: $base-margin*.5 0 $base-margin 0
 
-		.button
-			font-size: $base-fs*.9
-			margin-bottom: $base-margin
+		span
+			display: inline-block
+			&.button
+				display: inline-block
+				text-align: center
+				text-transform: uppercase
+				color: $black
+				background: $red
+				padding: $base-margin*.85 $base-margin*2
+				+border-radius(5px)
+				text-decoration: none
+				+transition(background, .3s)
+				font-weight: 700
+				margin: 0 $base-margin*.5 $base-margin
+				font-size: $base-fs*.9
+				&:hover, &:focus, &:active
+					background: $red-dark
+				&.turq
+					background: $turq
+					&:hover, &:focus, &:active
+						background: $turq-dark
+				&.yellow
+					background: $yellow
+					&:hover, &:focus, &:active
+						background: $yellow-dark
+				&.secondary
+					font-weight: 400
+					background: $grey
+					&:hover, &:focus, &:active
+						background: $grey-mid
 
 		&.full-page
 			width: 90vw
