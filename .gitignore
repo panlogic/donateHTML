@@ -4,3 +4,4 @@ config.codekit
 .Thumbs.db
 .sass-cache
 .code-codekit
+/.idea
