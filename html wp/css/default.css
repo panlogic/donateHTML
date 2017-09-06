@@ -1,6 +1,5 @@
-@charset "UTF-8";
 /**
- * HTML5 ✰ Boilerplate
+ * HTML5 Boilerplate
  *
  * style.css contains a reset, font normalization and some base styles.
  *
@@ -768,6 +767,7 @@ header {
         line-height: 1; }
         @media all and (min-width: 52em) {
           header nav ul li {
+            position: relative;
             display: inline-block;
             padding: 0.6em 1em 0 0; }
             header nav ul li:last-child {
@@ -776,7 +776,8 @@ header {
               display: none; } }
         @media all and (min-width: 64em) {
           header nav ul li {
-            padding: 0.5em 0 0 1.25em; }
+            position: relative;
+            padding: 0.5em 0 0.5em 1.25em; }
             header nav ul li:last-child {
               padding-left: 0; } }
         header nav ul li a:link, header nav ul li a:visited, header nav ul li a:active {
@@ -807,12 +808,52 @@ header {
           @media all and (min-width: 64em) {
             header nav ul li a.button:first-child {
               margin-left: 1em; } }
+        header nav ul li div {
+          display: none; }
+          @media all and (min-width: 52em), all and (min-width: 64em) {
+            header nav ul li div {
+              display: inline-block;
+              color: #262626;
+              margin-left: 6px; } }
         header nav ul li:last-child {
           float: left; }
           @media all and (min-width: 52em) {
             header nav ul li:last-child {
               float: right;
               padding-top: 0; } }
+        header nav ul li.has-menu.open ul {
+          display: block; }
+      header nav ul ul {
+        display: block;
+        text-indent: 10px;
+        margin: 0.8em 0; }
+        @media all and (min-width: 52em), all and (min-width: 64em) {
+          header nav ul ul {
+            display: none;
+            position: absolute;
+            width: 175px;
+            background-color: #333333;
+            z-index: 999;
+            margin-top: 8px;
+            margin-left: -4px;
+            padding: 5px 0 5px 0;
+            border-radius: 3px;
+            overflow: hidden; } }
+        header nav ul ul li {
+          display: block;
+          width: 100%;
+          float: none !important; }
+          @media all and (min-width: 52em), all and (min-width: 64em) {
+            header nav ul ul li {
+              padding: 6px 0 !important; } }
+          @media all and (min-width: 52em), all and (min-width: 64em) {
+            header nav ul ul li a {
+              color: #d0d0d0 !important;
+              font-size: 0.9em;
+              font-weight: normal; } }
+          @media all and (min-width: 52em), all and (min-width: 64em) {
+            header nav ul ul li a:hover {
+              color: #14bbba !important; } }
 
 .search form {
   float: left;
@@ -1853,7 +1894,7 @@ form, .nf-form-wrap {
     form.login fieldset, form.nf-form-wrap fieldset, .nf-form-wrap.login fieldset, .nf-form-wrap.nf-form-wrap fieldset {
       float: left;
       width: 100%; }
-    form.login input[type=text], form.login input[type=tel], form.login input[type=password], form.nf-form-wrap input[type=text], form.nf-form-wrap input[type=tel], form.nf-form-wrap input[type=password], .nf-form-wrap.login input[type=text], .nf-form-wrap.login input[type=tel], .nf-form-wrap.login input[type=password], .nf-form-wrap.nf-form-wrap input[type=text], .nf-form-wrap.nf-form-wrap input[type=tel], .nf-form-wrap.nf-form-wrap input[type=password] {
+    form.login input[type=text], form.login input[type=email], form.login input[type=tel], form.login input[type=password], form.nf-form-wrap input[type=text], form.nf-form-wrap input[type=email], form.nf-form-wrap input[type=tel], form.nf-form-wrap input[type=password], .nf-form-wrap.login input[type=text], .nf-form-wrap.login input[type=email], .nf-form-wrap.login input[type=tel], .nf-form-wrap.login input[type=password], .nf-form-wrap.nf-form-wrap input[type=text], .nf-form-wrap.nf-form-wrap input[type=email], .nf-form-wrap.nf-form-wrap input[type=tel], .nf-form-wrap.nf-form-wrap input[type=password] {
       border: 2px solid #EEE; }
     form.login input:invalid, form.nf-form-wrap input:invalid, .nf-form-wrap.login input:invalid, .nf-form-wrap.nf-form-wrap input:invalid {
       -moz-box-shadow: 0 0 0 0 transparent;
@@ -1864,6 +1905,17 @@ form, .nf-form-wrap {
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
       border-radius: 5px; }
+    form.login textarea, form.nf-form-wrap textarea, .nf-form-wrap.login textarea, .nf-form-wrap.nf-form-wrap textarea {
+      border: 2px solid #EEE; }
+      form.login textarea:invalid, form.nf-form-wrap textarea:invalid, .nf-form-wrap.login textarea:invalid, .nf-form-wrap.nf-form-wrap textarea:invalid {
+        -moz-box-shadow: 0 0 0 0 transparent;
+        -webkit-box-shadow: 0 0 0 0 transparent;
+        box-shadow: 0 0 0 0 transparent;
+        border: 2px solid #EEE;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px; }
     form.login a.small, form.nf-form-wrap a.small, .nf-form-wrap.login a.small, .nf-form-wrap.nf-form-wrap a.small {
       float: right; }
     form.login a.button, form.nf-form-wrap a.button, .nf-form-wrap.login a.button, .nf-form-wrap.nf-form-wrap a.button {
@@ -2152,3 +2204,5 @@ footer {
     max-height: 80px;
     display: inline-block;
     margin: 1em; }
+
+/*# sourceMappingURL=default.css.map */

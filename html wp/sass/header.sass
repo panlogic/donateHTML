@@ -111,14 +111,16 @@ header
 				padding: $base-margin*.5 0
 				line-height: 1
 				@media #{$tablet}
+					position: relative
 					display: inline-block
 					padding: $base-margin*.6 $base-margin*1 0 0
 					&:last-child
 						padding-right: 0
-					&.mobile 
+					&.mobile
 						display: none
 				@media #{$desktop}
-					padding: $base-margin*.5 0 0 $base-margin*1.25
+					position: relative
+					padding: $base-margin*.5 0 $base-margin*.5 $base-margin*1.25
 					&:last-child
 						padding-left: 0
 
@@ -152,11 +154,51 @@ header
 						@media #{$desktop}
 							&:first-child
 								margin-left: $base-margin
-
+				div
+					display: none
+					@media #{$tablet}, #{$desktop}
+						display: inline-block
+						//background-color: $black
+						//width: 17px
+						//height: 18px
+						//border-radius: 50%
+						color: $black
+						margin-left: 6px
+				//text-align: center
 				&:last-child
 					float: left
 					@media #{$tablet}
 						float: right
 						padding-top: 0
-
-
+				&.has-menu.open
+					ul
+						display: block
+			ul
+				display: block
+				text-indent: 10px
+				margin: 0.8em 0
+				@media #{$tablet}, #{$desktop}
+					display: none
+					position: absolute
+					width: 175px
+					background-color: $grey-dark
+					z-index: 999
+					margin-top: 8px
+					margin-left: -4px
+					padding: 5px 0 5px 0
+					border-radius: 3px
+					overflow: hidden
+				li
+					display: block
+					width: 100%
+					float: none !important
+					@media #{$tablet}, #{$desktop}
+						padding: 6px 0 !important
+					a
+						@media #{$tablet}, #{$desktop}
+							color: #d0d0d0 !important
+							font-size: 0.9em
+							font-weight: normal
+					a:hover
+						@media #{$tablet}, #{$desktop}
+							color: $turq !important
