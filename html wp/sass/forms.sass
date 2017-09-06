@@ -187,9 +187,17 @@ form, .nf-form-wrap
 
 		input
 			&[type=text],
+			&[type=email],
 			&[type=tel],
 			&[type=password]
 				border: 2px solid $grey-light
+			&:invalid
+				+box-shadow(0, 0, 0, 0, transparent)
+				border: 2px solid $grey-light
+				+border-radius(5px)
+
+		textarea
+			border: 2px solid $grey-light
 			&:invalid
 				+box-shadow(0, 0, 0, 0, transparent)
 				border: 2px solid $grey-light
@@ -213,10 +221,10 @@ form, .nf-form-wrap
 				display: inline-block
 				margin-right: $base-margin !important
 
-				label 
+				label
 					width: auto
 
-				input 
+				input
 					width: auto
 
 	&.nf-form-wrap
@@ -315,7 +323,7 @@ form, .nf-form-wrap
 				font-size: $base-fs*1.25
 
 .account
-	
+
 	a
 		&.button
 			padding-left: 0
