@@ -468,6 +468,9 @@ body {
     padding: 0 0 0 0 !important;
     margin: 0.2em 0.5em 0 0 !important;
     border: 0; }
+  .nfs-only input.margin-left[type=checkbox],
+  .nfs-only textarea.margin-left[type=checkbox] {
+    margin: 0.2em 0 0 0.5em !important; }
   .nfs-only input[type=text]:focus, .nfs-only input[type=password]:focus, .nfs-only input textarea:focus,
   .nfs-only textarea[type=text]:focus,
   .nfs-only textarea[type=password]:focus,
